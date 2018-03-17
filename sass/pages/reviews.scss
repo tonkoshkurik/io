@@ -8,11 +8,11 @@
         align-content: space-around;
         align-items: center;
         height: 180px;
-        .box {
-            flex: 1 1 auto;
-            height: 100%;
-            // flex-basis: 11.11%;
-        }
+        // .box {
+        //     // flex: 1 1 auto;
+        //     // height: 100%;
+        //     // flex-basis: 11.11%;
+        // }
         .menu-flex {
             display: flex;
             flex-wrap: wrap;
@@ -23,6 +23,9 @@
             li {
                 flex: 1 1 33%;
                 padding-right: 30px;
+                @media all and( max-width: 320px) {
+                    padding-right: 0;
+                }
             }
         }
         ul.menu a {
@@ -34,73 +37,96 @@
         ul.menu a:hover {
             font-weight: 600;
         }
+        @media all and( max-width: 600px) {
+            height: 80px;
+        }
+    }
+    .box-header {
+        // flex-basis: 20%;
+        flex: 2 3 auto;
+        height: 125px;
+    }
+    .box-header-min {
+        display: none;
+        background: #dff0ef;
+        h1 {
+            margin: 0 0 0 10.333333%;
+            padding-bottom: 20px;
+            padding-top: 10px;
+            font-size: 30px;
+        }
+    }
+    @media all and( max-width: 600px) {
+        margin-top: -65px;
         .box-header {
-            // flex-basis: 20%;
-            flex: 2 3 auto;
-            height: 125px;
+            display: none;
+        }
+        .box-header-min {
+            display: block;
         }
     }
 }
 
 .comments-index {
-    // display: flex;
-    // flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
     margin-bottom: 100px;
     .comment {
         // flex-basis: 640px;
-        max-width: 640px;
+        // max-width: 640px;
         margin-top: 60px;
-        h2 {
-            margin-bottom: 35px;
-        }
-        .excerpt {
-            margin: 20px 0;
-        }
         .btn {
             margin: 25px 0;
         }
-    }
-    .comment-text {
-        height: 250px;
-        background: #f5f6f8;
-        p {
-            margin-left: 37px;
-            margin-top: 20px;
-            margin-right: 10px;
-            margin-bottom: 10px;
+        .btn-primary {
+            padding: 12px 25px;
+            border-radius: 0;
+            color: #000;
+            background: #dff0ef;
+            border-color: transparent;
         }
-    }
-    .comment-meta {
-        display: flex;
-        justify-content: space-between;
-        position: relative;
-        font-size: 14px;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        padding: 10px 15px;
-        .name-user img {
-            right: 0;
-        }
-        .name-user span {
-            right: 0;
-            font-size: 18px;
-            font-weight: 600;
-            color: black;
-        }
-        .slim {
-            font-size: 16px;
-            label {
+        .comment-text {
+            height: 250px;
+            background: #f5f6f8;
+            p {
+                margin-left: 37px;
+                margin-top: 20px;
                 margin-right: 10px;
-                font-weight: normal;
+                margin-bottom: 10px;
             }
-            i {
-                padding: 5px;
-                background-color: #dff0ef;
-                color: #000;
-                border-radius: 15px;
-                margin-right: 5px;
+        }
+        .comment-meta {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            font-size: 14px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            padding: 10px 15px;
+            .name-user img {
+                right: 0;
+            }
+            .name-user span {
+                right: 0;
+                font-size: 18px;
                 font-weight: 600;
-                font-style: inherit;
+                color: black;
+            }
+            .slim {
+                font-size: 16px;
+                label {
+                    margin-right: 10px;
+                    font-weight: normal;
+                }
+                i {
+                    padding: 5px;
+                    background-color: #dff0ef;
+                    color: #000;
+                    border-radius: 15px;
+                    margin-right: 5px;
+                    font-weight: 600;
+                    font-style: inherit;
+                }
             }
         }
     }
