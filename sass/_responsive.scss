@@ -56,9 +56,14 @@
 
 // blog categories
 @media all and( max-width: 720px) {
-    .blog-header .menu-flex  > * {
-        display: none;
+.blog-header-wrapper {
+    .cats-toggle {
+        display: block !important;
     }
+    .menu-flex {
+        display: none ;
+    }
+}
 }
 
 @media all and (max-width: 780px) {
