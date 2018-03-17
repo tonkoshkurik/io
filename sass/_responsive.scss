@@ -1,0 +1,118 @@
+
+@media all and (max-width: 780px) {
+    // pagination 
+    
+    .navigation > div {
+        flex-wrap: wrap;
+    }
+    .navigation li.next {
+        float: none;
+    }
+    .navigation li {
+        padding: 5px;
+    }
+
+    .lang-container {
+        display: none;
+    }
+    footer > div {
+        height: 380px;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        .box {
+            // border: 1px solid red;
+        }
+        .phone {
+            display: flex;
+            order: 10;
+            align-items: center;
+            margin: 25px 0;
+            justify-content: space-around;
+        }
+        .social{ 
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .logo {
+            order: 11;
+        }
+        .social {
+            order: 11;
+        }
+    }
+}
+
+
+@media all and (max-width: 425px) {
+    .lang {
+        display: none;
+    }
+    .flex-menu {
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    footer > div {
+
+        .social {
+
+        }
+
+        .phone {
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-content: center;
+            p {
+                flex-basis: 100%;
+            }
+        } 
+        .logo {
+            order: 12;
+        }
+        .social {
+            order: 13;
+        }
+
+    }
+    .header.main {
+        nav {
+            float: 2;
+            .flex-menu {
+                display:flex;
+                flex-direction:column;
+                li {
+                    flex-basis: 100%;
+                }
+            }          
+        }
+    }
+    .blog-header .blog-header-wrapper .menu-flex {
+        display: none;
+        flex-direction: column;
+        flex-wrap: wrap;
+        li {
+            flex-basis: 100%; 
+        }
+    }
+
+    .navigation {
+        min-height: 185px;
+        display: flex; 
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        .box {
+            flex: 0;
+        }   
+        .navs {
+            flex-basis: 100%;
+            order: 1;
+        }
+    }
+}
