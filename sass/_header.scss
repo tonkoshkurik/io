@@ -23,6 +23,9 @@
         }
         nav {
             flex: 7;
+            .close {
+                display: none;
+            }
         }
         .flex-menu {
             display: flex;
