@@ -1,0 +1,139 @@
+.two-header {
+    .two-header-shop {
+        display: flex;
+        align-items: center;
+        height: 180px;
+        .box-header {
+            flex: 1;
+        }
+        .cats-toggle {
+            flex: 3;
+        }
+        .menu-flex {
+            display: none;
+        }
+    }
+    .two-header-cart {
+        display: flex;
+        align-items: center;
+        height: 180px;
+        a {
+            color: black;
+        }
+        a:hover {
+            text-decoration: none;
+            cursor: pointer;
+        }
+        a .label {
+            font-size: 20px;
+            font-weight: normal;
+            background-color: #dff0ef;
+            color: #000;
+            border-radius: 0px;
+        }
+    }
+}
+
+.stocks-box {
+    background-color: #f5f5f5;
+    padding: 35px 15px 0 15px;
+    .stock-box {
+        display: flex;
+        flex-direction: row;
+        align-self: auto;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        .element {
+            order: 0;
+            flex-grow: 1;
+        }
+        .stock-img img {
+            width: 100%;
+        }
+        .slider {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            a {
+                color: #000;
+            }
+        }
+        .stock-label {
+            background: #90c772;
+            color: #fff;
+            float: left;
+            font-size: 19px;
+            line-height: 75px;
+            text-align: center;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border-width: 1px;
+            border-style: solid;
+            margin-top: 50px;
+        }
+        .stock-text {
+            margin-top: 50px;
+            p {
+                color: #000;
+                font-size: 18px;
+                margin-top: 80px;
+                span {
+                    background: #fafafa;
+                    color: #0f080d;
+                    padding: 10px;
+                    font-weight: normal;
+                }
+            }
+        }
+        .stock-price {
+            margin-top: 50px;
+            .price-old {
+                font-size: 24px;
+                span {
+                    text-decoration: line-through;
+                }
+            }
+            .price {
+                font-size: 40px;
+                color: #000;
+                margin-top: -10px;
+            }
+            button {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+.product-list {
+    margin-top: 100px;
+    .row {
+        margin-top: 150px;
+    }
+    .product-box {
+        .product-title {
+            font-size: 24px;
+            padding-bottom: 20px;
+            font-weight: 600;
+            color: #000;
+        }
+        .price {
+            width: 100%;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            .price-naw {
+                color: #000;
+                font-size: 30px;
+            }
+        }
+        .product-img {
+            img {
+                width: 100%;
+            }
+        }
+        button {
+            font-size: 20px;
+        }
+    }
+}
