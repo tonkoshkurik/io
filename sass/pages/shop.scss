@@ -107,11 +107,12 @@
 }
 
 .product-list {
-    margin-top: 100px;
-    .row {
-        margin-top: 150px;
-    }
-    .product-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: auto;
+    margin-top: 50px;
+    .product-container {
+        margin-top: 100px;
         .product-title {
             font-size: 24px;
             padding-bottom: 20px;
@@ -128,12 +129,34 @@
             }
         }
         .product-img {
+            position: relative;
             img {
                 width: 100%;
             }
+            .label-product {
+                position: absolute;
+                top: 0;
+                padding: 0px 15px;
+                background-color: #c9c0c0;
+                color: #fff;
+                font-size: 14px;
+            }
+            .label-top {
+                background-color: #fab600;
+            }
+            .label-new {
+                background-color: #90c772;
+            }
+            .label-discount {
+                background-color: #f7637f;
+            }
         }
-        button {
+        .btn-buy {
             font-size: 20px;
+            padding: 20px 30px;
+            span {
+                margin-right: 15px;
+            }
         }
     }
 }
