@@ -77,3 +77,16 @@ ul.menu a {
     justify-content: space-between;
     align-items: flex-start;
 }
+a.toggleNav::before {
+    content: '';
+    width: 30px;
+    border-top: 2px solid #000;
+    border-bottom: 10px solid transparent;
+    display: block;
+}
+a.toggleNav:after {
+    content: '';
+    width: 30px;
+    border-bottom: 2px solid #000;
+    display: block;
+}

@@ -5,6 +5,7 @@ var prefix       = require('gulp-autoprefixer');
 var plumber      = require('gulp-plumber');
 var uglify       = require('gulp-uglify');
 var rename       = require("gulp-rename");
+var sourcemaps   = require("gulp-sourcemaps");
 
 /**
 *
@@ -17,9 +18,11 @@ var rename       = require("gulp-rename");
 **/
 gulp.task('sass', function() {
   gulp.src('sass/*.scss')
+  .pipe(sourcemaps.init())
   .pipe(sass({outputStyle: 'compressed'}))
   .pipe(prefix('last 2 versions', '> 1%', 'ie 8', 'Android 2', 'Firefox ESR'))
   .pipe(plumber())
+  .pipe(sourcemaps.write())
   .pipe(gulp.dest('./css'));
 });
 
@@ -49,5 +52,5 @@ gulp.task('browser-sync', function() {
 *
 **/
 gulp.task('default', ['sass', 'browser-sync', ], function () {
-  gulp.watch('app/sass/*.scss', ['sass']);
+  gulp.watch('./sass/*.scss', ['sass']);
 });
