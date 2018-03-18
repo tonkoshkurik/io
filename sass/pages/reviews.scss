@@ -8,11 +8,6 @@
         align-content: space-around;
         align-items: center;
         height: 180px;
-        // .box {
-        //     // flex: 1 1 auto;
-        //     // height: 100%;
-        //     // flex-basis: 11.11%;
-        // }
         .menu-flex {
             display: flex;
             flex-wrap: wrap;
@@ -51,8 +46,7 @@
         background: #dff0ef;
         h1 {
             margin: 0 0 0 10.333333%;
-            padding-bottom: 20px;
-            padding-top: 10px;
+            padding: 10px 0 20px 25px;
             font-size: 30px;
         }
     }
@@ -62,7 +56,27 @@
             display: none;
         }
         .box-header-min {
-            display: block;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            color: #312d32;
+            .menu-item {
+                flex-grow: 1;
+            }
+            .cart {
+                float: right;
+                margin-right: 30px;
+                padding: 15px 0 20px 25px;
+                color: #312d32;
+                span {
+                    font-size: 20px;
+                    font-weight: normal;
+                    background-color: #fff;
+                    color: #312d32;
+                    border-radius: 0px;
+                    margin-left: 10px;
+                }
+            }
         }
     }
 }

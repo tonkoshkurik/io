@@ -21,7 +21,7 @@
                         <img src="img/logo.png" alt="Igor Obuhovsky logo">
                     </div>
                     <nav class="menu-overlay">
-                        <a href="#" class="toggleNav">☰ </a>
+                        <a href="#" class="toggleNav"></a>
                         <ul class="menu box flex-menu">
                             <li class="menu-item"><a href="about.html">Обо мне</a></li>
                             <li class="menu-item"><a href="#">Проекты</a></li>
@@ -49,30 +49,39 @@
 
         <div class="row two-header">
             <div class="box-header-min">
-                <h1>Магазин</h1>
-            </div>
-            <div class="col-xs-12 col-sm-8 col-sm-offset-1 two-header-shop">
-                <div class="box-header">
+                <div class="menu-item">
                     <h1>Магазин</h1>
                 </div>
-                <a href="#" class="cats-toggle">Список товаров <i class="fas fa-angle-down"></i></a>
-                <ul class="menu menu-flex">
-                    <li class="menu-item"><a href="#">Фото</a></li>
-                    <li class="menu-item"><a href="#">Видео</a></li>
-                    <li class="menu-item"><a href="#">Отзывы</a></li>
-                </ul>
+                <div class="menu-item">
+                    <a href="#" class="cats-toggle cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="label">2</span>
+                    </a>
+                </div>
             </div>
-            <div class="col-xs-12 col-sm-2 two-header-cart">
-                <a href="#" class="cats-toggle">
-                    <i class="fas fa-shopping-cart"></i> Список товаров
-                    <span class="label">2</span>
-                </a>
+            <div class="col-xs-offset-1">
+                <div class="col-xs-12 col-sm-9 two-header-shop">
+                    <div class="box-header">
+                        <h1>Магазин</h1>
+                    </div>
+                    <a href="#" class="cats-toggle">Список товаров <i class="fas fa-angle-down"></i></a>
+                    <ul class="menu menu-flex">
+                        <li class="menu-item"><a href="#">Фото</a></li>
+                        <li class="menu-item"><a href="#">Видео</a></li>
+                        <li class="menu-item"><a href="#">Отзывы</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 two-header-cart">
+                    <a href="#" class="cats-toggle">
+                        <i class="fas fa-shopping-cart"></i> Список товаров
+                        <span class="label">2</span>
+                    </a>
+                </div>
             </div>
-
         </div>
 
         <div class="row stocks-box">
-            <div class="col-xs-12 stock-box">
+            <div class="stock-box">
                 <div class="slider-box">
                     <div class="slider">
                         <a href="#"><i class="fas fa-circle"></i></a>
@@ -82,7 +91,9 @@
                 </div>
                 <div class="content-box">
                     <div class="element">
-                        <span class="stock-label">Акция</span>
+                        <div class="stock-label-box">
+                            <span class="stock-label">Акция</span>
+                        </div>
                     </div>
                     <div class="element">
                         <div class="stock-text">
@@ -95,22 +106,22 @@
                             </p>
                         </div>
                     </div>
-                    <div class="element">
-                        <div class="stock-img">
-                            <img src="img/stock-img.png">
-                        </div>
+                    <div class="element stock-img">
+                        <img src="img/stock-img.png">
                     </div>
                     <div class="element">
                         <div class="stock-price">
-                            <div class="price-old">
-                                <span>300</span> грн
-                            </div>
-                            <div class="price">
-                                100 грн
+                            <div class="price-box">
+                                <div class="price-old">
+                                    <span>300</span> грн
+                                </div>
+                                <div class="price">
+                                    <span>100 грн</span>
+                                </div>
                             </div>
                             <button class="btn btn-primary">
-                            <span>Купить</span> <i class="fas fa-long-arrow-alt-down"></i>
-                        </button>
+                                <span>Купить</span> <i class="fas fa-long-arrow-alt-down"></i>
+                            </button>
                         </div>
                     </div>
                 </div>

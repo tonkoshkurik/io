@@ -2,12 +2,14 @@
     .two-header-shop {
         display: flex;
         align-items: center;
+        padding: 0;
         height: 180px;
         .box-header {
             flex: 1;
         }
         .cats-toggle {
-            flex: 3;
+            flex: 1;
+            color: #312d32;
         }
         .menu-flex {
             display: none;
@@ -16,6 +18,8 @@
     .two-header-cart {
         display: flex;
         align-items: center;
+        margin-left: -35px;
+        padding: 0;
         height: 180px;
         a {
             color: black;
@@ -32,15 +36,41 @@
             border-radius: 0px;
         }
     }
+    @media all and( max-width: 767px) {
+        .two-header-shop {
+            height: 75px;
+        }
+        .two-header-cart {
+            height: 45px;
+            margin-left: 0px;
+        }
+    }
+    @media all and( max-width: 600px) {
+        .two-header-cart {
+            display: none;
+        }
+    }
 }
 
 .stocks-box {
     background-color: #f5f5f5;
-    padding: 35px 15px 0 15px;
+    padding: 0 15px 0 15px;
     .stock-box {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
+        .slider-box {
+            flex-grow: 0;
+            .slider {
+                display: flex;
+                flex-direction: column;
+                a {
+                    color: #000;
+                    font-size: 8px;
+                    margin-top: 15px
+                }
+            }
+        }
         .content-box {
             flex-grow: 1;
             display: flex;
@@ -51,88 +81,117 @@
             .element {
                 order: 0;
                 flex-grow: 1;
+                margin: 20px 15px 0 15px;
             }
-        }
-        .slider-box {
-            flex-grow: 1;
-        }
-        @media all and( min-width: 720px) {
-            .slider-box {
-                margin: auto;
-            }
-        }
-        @media all and( max-width: 720px) {
-            flex-direction: row-reverse;
-            .content-box {
-                flex-direction: column;
-            }
-            .slider-box {
-                .slider {
-                    align-items: flex-end;
+            .stock-img {
+                align-self: flex-end;
+                img {
+                    width: 100%;
+                    max-width: 450px;
                 }
             }
-        }
-        div {
-            order: 0;
-            flex-grow: 1;
-        }
-        .stock-img img {
-            width: 100%;
-        }
-        .slider {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            a {
-                color: #000;
+            .stock-text {
+                h2 {
+                    font-size: 2.5vw;
+                    margin: 0;
+                }
+                p {
+                    color: #000;
+                    font-size: 1.3vw;
+                    margin-top: 30px;
+                    span {
+                        background: #fafafa;
+                        color: #0f080d;
+                        padding: 10px;
+                        font-weight: normal;
+                    }
+                }
+            }
+            .stock-price {
+                .price-old {
+                    font-size: 2vw;
+                    span {
+                        text-decoration: line-through;
+                    }
+                }
+                .price {
+                    font-size: 2.3vw;
+                    color: #000;
+                    margin-top: -10px;
+                }
+                .btn-primary {
+                    font-size: 18px;
+                    margin-top: 50px;
+                    span {
+                        margin-right: 15px;
+                    }
+                }
             }
         }
         .stock-label {
             background: #90c772;
             color: #fff;
             float: left;
-            font-size: 19px;
-            line-height: 75px;
+            font-size: 16px;
+            line-height: 65px;
             text-align: center;
-            width: 80px;
-            height: 80px;
+            width: 65px;
+            height: 65px;
             border-radius: 50%;
             border-width: 1px;
             border-style: solid;
-            margin-top: 50px;
         }
-        .stock-text {
-            margin-top: 50px;
-            p {
-                color: #000;
-                font-size: 18px;
-                margin-top: 80px;
-                span {
-                    background: #fafafa;
-                    color: #0f080d;
-                    padding: 10px;
-                    font-weight: normal;
-                }
+        @media all and( min-width: 770px) {
+            .slider-box {
+                margin: auto;
             }
         }
-        .stock-price {
-            margin-top: 50px;
-            .price-old {
-                font-size: 24px;
-                span {
-                    text-decoration: line-through;
+        @media all and( max-width: 770px) {
+            flex-direction: row-reverse;
+            .slider-box {
+                .slider {
+                    align-items: flex-end;
                 }
             }
-            .price {
-                font-size: 40px;
-                color: #000;
-                margin-top: -10px;
+            .stock-label-box {
+                display: none;
             }
-            button {
-                font-size: 18px;
-                margin-top: 50px;
-                span {
-                    margin-right: 15px;
+            .content-box {
+                flex-direction: column;
+                margin-bottom: 25px;
+                .element {
+                    margin: 0px 15px 0 15px;
+                }
+                .stock-text {
+                    margin-top: 15px;
+                    h2 {
+                        font-size: 25px;
+                    }
+                    p {
+                        font-size: 17px;
+                    }
+                }
+                .stock-img {
+                    align-self: center;
+                }
+                .stock-price {
+                    .price-box {
+                        display: flex;
+                        flex-direction: row;
+                        .price-old {
+                            padding: 11px;
+                            font-size: 17px;
+                        }
+                        .price {
+                            flex-grow: 1;
+                            font-size: 33px;
+                        }
+                    }
+                    .btn-primary {
+                        flex-grow: 10;
+                        width: 100%;
+                        margin-top: 5px;
+                    }
                 }
             }
         }
@@ -143,7 +202,6 @@
     display: flex;
     flex-wrap: wrap;
     align-self: auto;
-    margin: 50px 0;
     .product-container {
         margin-top: 100px;
         .product-header {
