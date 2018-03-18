@@ -57,11 +57,19 @@
 // blog categories
 @media all and( max-width: 720px) {
 .blog-header-wrapper {
+    flex-wrap: wrap;
+    min-height: 180px;
     .cats-toggle {
         display: block !important;
+        // color: #0f080d; // !important;
     }
     .menu-flex {
-        display: none ;
+        display: none !important ;
+    }
+    .menu-flex.open {
+        display: flex !important;
+        flex: 1 0 100%;
+        padding: 30px;
     }
 }
 }

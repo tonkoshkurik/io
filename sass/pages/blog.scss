@@ -2,7 +2,7 @@
 
 .blog-header {
     background: $bg-grey;
-        margin-top:-30px;
+    margin-top:-30px;
     .blog-header-wrapper {
         display: flex;
         justify-content: space-between;
@@ -36,8 +36,9 @@
                 padding-right: 30px;
             }
         }
-        .cats-toggle {
+       a.cats-toggle {
             display: none;
+            color: #0f080d; // !important;
         }
     }
 }
