@@ -5,10 +5,11 @@
     margin-top:-30px;
     .blog-header-wrapper {
         display: flex;
+        // flex-wrap: wrap;
         justify-content: space-between;
         align-content: space-around;
         align-items: center;
-        height: 180px;
+        min-height: 180px;
         .box {
             flex: 1 1 auto;
             height: 100%;
@@ -22,14 +23,14 @@
         }
         .box-header {
             // flex-basis: 20%;
-            flex: 2 3 auto;
+            flex: 3;
             height: 125px;
         }
         .menu-flex {
             display: flex;
             flex-wrap: wrap;
+            flex: 7;
             flex-direction: column;
-            flex: 7 0 auto;
             height: 80px;
             li{
                 flex: 1 1 33%;

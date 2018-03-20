@@ -3,8 +3,10 @@
 footer {
     background: #312d32;
     min-height: 130px;
-    display: flex;
+    // display: flex;
     align-items: center;
+    z-index: 22;
+    position: relative;
     .social {
     //     font-size: 23px;
     //     color: #695d6c;
@@ -22,11 +24,12 @@ footer > div {
     align-content: space-around;
     align-items: center;
     .box {
-        flex: 1 1 auto;
+        flex: 1 0 auto;
     }
     .logo {
         flex: 1;
         color:#695d6c;
+        margin: 15px;
         img {
             padding: 12px 10px;
         }
@@ -40,21 +43,27 @@ footer > div {
     }
 
     ul.menu {
-        flex: 3;
+        flex: 4 0 auto;
         display: inline-flex;
         // flex-direction: column;
         flex-wrap: wrap;
-        padding: 0;
+        // padding: 0;
         // margin: 0;
         margin: 25px 0;
-        width: 100%;
+        // width: 100%;
         li{
-            flex-basis: 50%;
+            flex: 1 0 33%;
         }
         li>a {
             font-size: 14px;
             color: #aaa3ac; 
             font-weight: 200;
     }
+    }
+}
+@media all and (min-width: 900px) {
+    footer>div ul.menu {
+        flex: 3 0 480px;
+        width: 480px;
     }
 }

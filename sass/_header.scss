@@ -66,6 +66,9 @@ ul.menu {
 ul.menu>li{
     margin-top:0;
     padding-top:0;
+    &.active > a {
+        font-weight: 600;
+    }
 }
 ul.menu a {
     text-decoration: none;
