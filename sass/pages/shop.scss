@@ -1,4 +1,39 @@
 .two-header {
+    .top-0{
+        margin-top: 0;
+    }
+    @media all and( max-width: 600px) {
+        margin-top: -65px;
+        .box-header-min.cart {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            color: #312d32;
+            padding-left: 25px;
+            h1{
+                padding-left: 0;
+                font-size: 26px;
+            }
+            .menu-item {
+                flex-grow: 1;
+            }
+            .cart {
+                float: right;
+                margin-right: 30px;
+                padding: 15px 0 20px 25px;
+                color: #312d32;
+                span {
+                    font-size: 20px;
+                    font-weight: normal;
+                    background-color: #fff;
+                    color: #312d32;
+                    border-radius: 0px;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+
     .two-header-shop {
         display: flex;
         align-items: center;
@@ -265,7 +300,7 @@
                     padding-bottom: 5px;
                 }
                 .btn-buy {
-                    flex-grow: 1;
+                    flex-grow: 1; 
                 }
             }
         }
