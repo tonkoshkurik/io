@@ -1,6 +1,7 @@
 // reviews index
 .two-header {
     background: $bg-grey;
+    color: #000;
     margin-top: -30px;
     .two-header-wrapper {
         display: flex;
@@ -70,6 +71,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 100px;
+    color:#312d32;
     .comment {
         // flex-basis: 640px;
         // max-width: 640px;
@@ -121,6 +123,8 @@
                     label {
                         margin-right: 10px;
                         font-weight: normal;
+                        font-size: 13px;
+                        display: contents;
                     }
                     span {
                         padding: 0 3px 0 3px;
