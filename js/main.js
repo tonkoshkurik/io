@@ -15,15 +15,16 @@ $(function() {
 $(window).resize(function() {
 
 });
-$(document).ready(function() {
-    $('#slider').fullpage({
-        autoScrolling: false,
-        fitToSection: false,
-        // slidesNavPosition: 'bottom',
-        controlArrows: false,
-        anchors:['first'],
-    });
-});
+
+// $(document).ready(function() {
+//     $('#slider').fullpage({
+//         autoScrolling: false,
+//         fitToSection: false,
+//         // slidesNavPosition: 'bottom',
+//         controlArrows: false,
+//         anchors:['first'],
+//     });
+// });
 
 function io_hm_page_silder(){
 

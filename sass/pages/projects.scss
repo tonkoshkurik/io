@@ -27,11 +27,6 @@
         @media (max-width: 767px) {
             margin-top: 0;
         }
-        .badge {
-            color: #000;
-            background-color: #fff;
-            font-weight: 400;
-        }
     }
     .projects-info {
         margin-top: 10%;
@@ -43,6 +38,12 @@
             max-height: 260px;
         }
     }
+}
+
+.badge-white {
+    color: #000;
+    background-color:#fff;
+    font-weight: 400;
 }
 
 @media(max-width: 767px) {
