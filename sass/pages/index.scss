@@ -110,7 +110,8 @@
 .padding0 {
     padding: 0;
 }
-.works-info-box-img{
+
+.works-info-box-img {
     background: url(../img/IMG3.png) 100% 20% no-repeat;
     @media (max-width: 540px) {
         .works-img-caption {
@@ -124,7 +125,6 @@
 }
 
 .works-info-box {
-   
     color: #918a93;
     /* Добавляем фон */
     background-size: cover;
@@ -230,16 +230,16 @@
     margin-top: 30px;
 }
 
-.sistem-info-box { 
+.sistem-info-box {
     background-color: #f5f5f5;
-    color:#312d32;
+    color: #312d32;
     padding-top: 45px;
     padding-bottom: 45px;
-    img{
+    img {
         padding-top: 60px;
     }
-    .info-body{
-        h2{
+    .info-body {
+        h2 {
             font-size: 55px;
         }
     }
@@ -251,8 +251,8 @@
     .info-content {
         margin-top: 10%;
         margin-left: 15px;
-        p{
-            padding: 30px; 
+        p {
+            padding: 30px;
         }
     }
     @media (max-width: 768px) {
@@ -265,7 +265,7 @@
     }
 }
 
-.command-info-box-img{
+.command-info-box-img {
     background: url(../img/IMG_command.png) 100% 20% no-repeat;
     background-size: cover;
     height: 835px;
@@ -282,7 +282,8 @@
         }
     }
 }
-.btn-command{
+
+.btn-command {
     margin-left: 30px;
     margin-top: 70%;
     font-size: 18px;
@@ -294,12 +295,32 @@
         margin-top: 20%;
     }
 }
-.text-white{
+
+.text-white {
     color: #fff;
-    h2{
+    h2 {
         color: #fff;
     }
-    .line-inset::before{
+    .line-inset::before {
         background-color: #fff;
+    }
+}
+
+.child-info-box h2 {
+    font-size: 3.1vw;
+    margin-bottom: 100px;
+}
+
+.posts-index {
+    .posts-title h2 {
+        font-size: 3.1vw;
+        margin-top: 55px
+    }
+}
+
+.margin-top30{
+    margin-top: 30px !important;
+    h3{
+        margin-top: 0;
     }
 }
