@@ -25,7 +25,6 @@
                         <div class="logo box">
                             <img src="img/logo.png" alt="Igor Obuhovsky logo">
                         </div>
-
                         <nav class="menu-overlay">
                             <a href="#" class="toggleNav"></a>
                             <ul class="menu box flex-menu">
@@ -89,10 +88,11 @@
                     <div class="swiper-slide">
                         <img src="img\header-1.png" />
                         <div class="swiper-content-text" style="color:#fff;">
-                            <div class="title">«ЖирКиллер»</div><br>
+                            <div class="title">«ЖирКиллер»</div>
+                            <br>
                             <div class="text">
-                                <p>Худей и выигрывай <br>
-                                        Старт проекта — 21 декабря</p>
+                                <p>Худей и выигрывай
+                                    <br> Старт проекта — 21 декабря</p>
                             </div>
                             <div class="button">
                                 <a href="#" class="btn btn-primary btn-slide-white">Подробнее &#8594;</a>
@@ -102,7 +102,7 @@
                 </div>
                 <!-- Add Arrows -->
                 <div class="swiper-button-next"></div>
-                
+
             </div>
             <!-- <div class="heder-content margin-top-minus50 col-sm-12">
                 <div class="caption-box col-md-11 col-sm-offset-1">
@@ -148,13 +148,13 @@
                 </div>
             </div>
         </div>
-        <div class="row row-flex">
+        <div class="row row-flex projects-info-box">
             <div class="col-md-3 padding0">
                 <img src="img/1.png" style="width:100%" />
             </div>
             <div class="col-md-9 row-flex-col padding0">
 
-                <div class="info-box">
+                <div class="info-box background-grey">
                     <div class="info-box-content">
                         <div class="info-box-text">
                             <h3>«ЖирКиллер»</h3>
@@ -307,7 +307,7 @@
             </div>
         </div>
 
-        <div class="row sistem-info-box text-size">
+        <div class="row sistem-info-box text-size background-white">
             <div class=" col-xs-12 hidden-sm hidden-md hidden-lg">
                 <h2>Утром лекции,
                     <br> Вечером тренировки</h2>
@@ -331,6 +331,7 @@
                 </div>
             </div>
         </div>
+
         <div class="row sistem-info-box command-info-box-img text-size text-white">
             <div class=" col-xs-12 hidden-sm hidden-md hidden-lg">
                 <h2>Утром лекции,
@@ -346,6 +347,86 @@
                 </div>
             </div>
         </div>
+
+        <div class="row row-flex comment-info-box text-size background-white">
+            <div class=" col-xs-12 hidden-sm hidden-md hidden-lg">
+                <h2>Утром лекции,
+                    <br> Вечером тренировки</h2>
+            </div>
+            <div class="col-12 col-xs-4 col-lg-6 book-slider">
+            </div>
+            <div class="col-12 col-sm-5 row-flex-col">
+                <h2 class="hidden-xs">Отзывы участников</h2>
+                <div class="col-md-11 row-flex-col info-content line-inset">
+                    <div class="info-box active text-center ">
+                        <div class="info-box-content">
+                            <div class="info-title text-left">
+                                <img src="../img/photo.png" />
+                                <span>Фото</span>
+                            </div>
+                            <div class="info-swiper input-group group-quantity">
+                                <span class="input-group-btn">
+                                    <a class="quantity-left-minus">
+                                        <img src="../img/slide-box-last.png" />
+                                    </a>
+                                </span>
+                                <span class="quantity">01</span>
+                                <span class="input-group-btn">
+                                    <a class="quantity-left-plus">
+                                        <img src="../img/slide-box-next.png" />
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="info-count-post">
+                                <span>22</span>
+                            </div>
+                            <div class="info-text">
+                                <span>Все отзывы</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-box text-center">
+                        <div class="info-box-content">
+                            <div class="info-title text-left">
+                                <img src="../img/sms.png" />
+                                <span>Отзывы</span>
+                            </div>
+                            <div class="info-swiper">
+                                <img src="../img/slide-box-last.png" />
+                                <span>01</span>
+                                <img src="../img/slide-box-next.png" />
+                            </div>
+                            <div class="info-count-post">
+                                <span>22</span>
+                            </div>
+                            <div class="info-text">
+                                <span>Все отзывы</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-box text-center">
+                        <div class="info-box-content">
+                            <div class="info-title text-left">
+                                <img src="../img/video.png" />
+                                <span>Видео</span>
+                            </div>
+                            <div class="info-swiper">
+                                <img src="../img/slide-box-last.png" />
+                                <span>01</span>
+                                <img src="../img/slide-box-next.png" />
+                            </div>
+                            <div class="info-count-post">
+                                <span>22</span>
+                            </div>
+                            <div class="info-text">
+                                <span>Все отзывы</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="row posts-index margin-bottom0 background-grey">
             <div class="col-xs-11 col-xs-offset-1 posts-title">
                 <div class="col-xs-6">
@@ -456,6 +537,7 @@
             navigation: {
                 nextEl: '.swiper-button-next'
             },
+            loop: true,
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
