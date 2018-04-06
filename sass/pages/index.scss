@@ -11,25 +11,9 @@
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
     align-items: center;
-    img {
-        width: auto;
-        height: auto; 
-        -ms-transform: translate(-50%, -50%);
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        position: absolute;
-        left: 50%;
-        top: 50%;
-    }
+    background-size: cover;
     .swiper-content-text {
         z-index: 2;
         width: 80%;
@@ -136,9 +120,37 @@
 }
 
 .projects-info-box {
+    .box-img-projects {
+        background: url(../img/1.png) 50% 50%;
+        height: 970px;
+        background-size: cover;
+    }
+    .icon-btn{
+        position: absolute;
+        left: -3%;
+        display:none;
+    }
+    .icon-project{
+        filter: grayscale(100%);
+    }
+    .box1:hover a{
+        color: #00528b;
+    }
+    .box2:hover a{
+        color: #dd4413;
+    }
+    .box3:hover a{
+        color: #97319e;
+    }
     .info-box:hover {
         background-color: #ffeae3;
         cursor: pointer;
+        .icon-btn {
+            display: unset;
+        }
+        .icon-project {
+            filter:  grayscale(0%);
+        }
     }
 }
 
@@ -334,8 +346,7 @@
 }
 
 .comment-info-box {
-    padding-top: 65px;
-    // padding-bottom: 45px;
+    padding-top: 65px; // padding-bottom: 45px;
     h2 {
         font-size: 3.3vw;
         margin-bottom: 75px;

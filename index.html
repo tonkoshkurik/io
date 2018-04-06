@@ -71,8 +71,7 @@
                 <!-- Add Pagination -->
                 <!-- <div class="swiper-pagination"></div> -->
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="img\header-2.png" />
+                    <div class="swiper-slide" style="background-image:url(../img/header-2.png)">
                         <div class="swiper-content-text">
                             <div class="title">Привет,
                                 <br>я — Игорь Обуховский</div>
@@ -85,8 +84,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <img src="img\header-1.png" />
+                    <div class="swiper-slide" style="background-image:url(../img/header-1.png)">
                         <div class="swiper-content-text" style="color:#fff;">
                             <div class="title">«ЖирКиллер»</div>
                             <br>
@@ -149,13 +147,12 @@
             </div>
         </div>
         <div class="row row-flex projects-info-box">
-            <div class="col-md-3 padding0">
-                <img src="img/1.png" style="width:100%" />
+            <div class="col-md-3 padding0 box-img-projects" style="background-image:url(../img/1.png)">
             </div>
-            <div class="col-md-9 row-flex-col padding0">
-
-                <div class="info-box background-grey">
+            <div class="col-md-9 row-flex-col padding0  background-grey">
+                <div class="info-box box1">
                     <div class="info-box-content">
+                            <img class="icon-btn" src="../img/4.png">
                         <div class="info-box-text">
                             <h3>«ЖирКиллер»</h3>
                             <div>
@@ -168,12 +165,13 @@
                             <a href="#" class="btn">Подробнее &#8594;</a>
                         </div>
                         <div class="info-box-img">
-                            <img src="img/11.png" />
+                            <img class="icon-project" src="img/11.png" />
                         </div>
                     </div>
                 </div>
-                <div class="info-box">
+                <div class="info-box box2">
                     <div class="info-box-content">
+                        <img class="icon-btn" src="../img/6.png">
                         <div class="info-box-text">
                             <h3>«Формы в Норме»</h3>
                             <div>
@@ -186,12 +184,13 @@
                             <a href="#" class="btn">Подробнее &#8594;</a>
                         </div>
                         <div class="info-box-img">
-                            <img src="img/12.png" />
+                            <img class="icon-project" src="img/12.png" />
                         </div>
                     </div>
                 </div>
-                <div class="info-box">
+                <div class="info-box box3">
                     <div class="info-box-content">
+                        <img class="icon-btn" src="../img/5.png">
                         <div class="info-box-text">
                             <h3>«Міцні горішки»</h3>
                             <div>
@@ -204,7 +203,7 @@
                             <a href="#" class="btn">Подробнее &#8594;</a>
                         </div>
                         <div class="info-box-img">
-                            <img src="img/13.png" />
+                            <img class="icon-project" src="img/13.png" />
                         </div>
                     </div>
                 </div>
@@ -565,6 +564,16 @@
                     show = false;
                     //alert("dd");
                 }
+            });
+
+            $('.info-box.box3').on('mouseover', function() {
+                $('.box-img-projects').css('background','url(../img/3.png) 50% 50%');
+            });
+            $('.info-box.box2').on('mouseover', function() {
+                $('.box-img-projects').css('background','url(../img/2.png) 50% 50%');
+            });
+            $('.info-box.box1').on('mouseover', function() {
+                $('.box-img-projects').css('background','url(../img/1.png) 50% 50%');
             });
         });
     </script>
