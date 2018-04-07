@@ -17,7 +17,7 @@
 
 <body>
     <div class="page container-fluid">
-        <div class="row header main header-projects" style="background:none;">
+        <div class="row header main header-projects header-index " style="background:none;">
 
             <div class="col-sm-12" style="position: relative; z-index: 2;">
                 <div class="col-md-8 col-xs-offset-1">
@@ -67,11 +67,8 @@
             </div>
 
             <div class="swiper-container" style="top: -145px;">
-
-                <!-- Add Pagination -->
-                <!-- <div class="swiper-pagination"></div> -->
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide" style="background-image:url(../img/header-2.png)">
+                    <div class="swiper-slide" style="background: url(../img/header-2.png) 50% 50% no-repeat;">
                         <div class="swiper-content-text">
                             <div class="title">Привет,
                                 <br>я — Игорь Обуховский</div>
@@ -84,7 +81,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide" style="background-image:url(../img/header-1.png)">
+                    <div class="swiper-slide" style="background: url(../img/header-1.png) 50% 50% no-repeat;">
                         <div class="swiper-content-text" style="color:#fff;">
                             <div class="title">«ЖирКиллер»</div>
                             <br>
@@ -245,8 +242,8 @@
                 <ul class="line-inset line-inset-3">
                     <li class="media">
                         <div class="media-title">
-                            <img src="img/Icons1.png" />
-                            <span>Все просто</span>
+                            
+                            <span> <img src="img/Icons1.png" /> Все просто</span>
                         </div>
                         <div class="media-content">
                             <p>Здесь не бывает чудо-диет и волшебных таблеток. Нет и не будет места лени. Только регулярные
@@ -255,8 +252,8 @@
                     </li>
                     <li class="media">
                         <div class="media-title">
-                            <img src="img/Icons2.png" />
-                            <span>Масштаб проектов</span>
+                            
+                            <span> <img src="img/Icons2.png" /> Масштаб проектов</span>
                         </div>
                         <div class="media-content">
                             <p>Более 30 тыс. участников из 22 стран по всему миру уже изменили свое тело. Присоединяйся к нам!</p>
@@ -264,8 +261,7 @@
                     </li>
                     <li class="media">
                         <div class="media-title">
-                            <img src="img/Icons3.png" />
-                            <span> Сила мотивации </span>
+                            <span>  <img src="img/Icons3.png" /> Сила мотивации </span>
                         </div>
                         <div class="media-content">
                             <p>Здесь не бывает чудо-диет и волшебных таблеток. Нет и не будет места лени. Только регулярные
@@ -274,8 +270,7 @@
                     </li>
                     <li class="media">
                         <div class="media-title">
-                            <img src="img/Icons4.png" />
-                            <span> Сила единства </span>
+                            <span> <img src="img/Icons4.png" /> Сила единства </span>
                         </div>
                         <div class="media-content">
                             <p>У каждого из моих проектов есть свое сообщество. Это твои единомышленники, готовые поддержать,
@@ -284,8 +279,7 @@
                     </li>
                     <li class="media">
                         <div class="media-title">
-                            <img src="img/Icons5.png" />
-                            <span> Моя вера</span>
+                            <span> <img src="img/Icons5.png" /> Моя вера</span>
                         </div>
                         <div class="media-content">
                             <p>Мои агенты ответят на любой вопрос, помогут разобраться в системе, отправить отчет и не отвлекаться
@@ -294,8 +288,8 @@
                     </li>
                     <li class="media">
                         <div class="media-title">
-                            <img src="img/Icons6.png" />
-                            <span> Поддержка и помощь </span>
+                            
+                            <span> <img src="img/Icons6.png" /> Поддержка и помощь </span>
                         </div>
                         <div class="media-content">
                             <p>Вера в тебя и твои силы. Я помогал измениться самым разным участникам проектов. Поэтому знаю
@@ -311,7 +305,7 @@
                 <h2>Утром лекции,
                     <br> Вечером тренировки</h2>
             </div>
-            <div class="col-12 col-xs-4 col-lg-6">
+            <div class="col-12 col-xs-4 col-md-6">
                 <img src="img/IMG_PC.png" width="100%">
             </div>
             <div class="col-12 col-sm-4">
@@ -352,11 +346,11 @@
                 <h2>Утром лекции,
                     <br> Вечером тренировки</h2>
             </div>
-            <div class="col-12 col-xs-4 col-lg-6 book-slider">
+            <div class="col-12 col-xs-4 col-md-6 book-slider">
             </div>
             <div class="col-12 col-sm-5 row-flex-col">
                 <h2 class="hidden-xs">Отзывы участников</h2>
-                <div class="col-md-11 row-flex-col info-content line-inset">
+                <div class="col-md-12 col-lg-11 row-flex-col info-content line-inset">
                     <div class="info-box active text-center ">
                         <div class="info-box-content">
                             <div class="info-title text-left">
@@ -428,7 +422,7 @@
 
         <div class="row posts-index margin-bottom0 background-grey">
             <div class="col-xs-11 col-xs-offset-1 posts-title">
-                <div class="col-xs-6">
+                <div class="col-xs-6 padding0">
                     <h2>Блог</h2>
                 </div>
                 <div class="col-xs-6">
@@ -575,6 +569,8 @@
             $('.info-box.box1').on('mouseover', function() {
                 $('.box-img-projects').css('background','url(../img/1.png) 50% 50%');
             });
+
+            $(".swiper-slide").css('background-size','cover');
         });
     </script>
 </body>
