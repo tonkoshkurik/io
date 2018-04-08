@@ -43,6 +43,7 @@ footer > div {
     }
 
     ul.menu {
+        max-width: 100%;
         flex: 4 0 auto;
         display: inline-flex;
         // flex-direction: column;

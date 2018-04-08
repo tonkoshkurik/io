@@ -66,9 +66,9 @@
                 </div>
             </div>
 
-            <div class="swiper-container" style="top: -145px;">
+            <div class="swiper-container">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide" style="background: url(../img/header-2.png) 50% 50% no-repeat;">
+                    <div class="swiper-slide slide-img1" style="background: url(../img/header-2.png) 50% 50% no-repeat;">
                         <div class="swiper-content-text">
                             <div class="title">Привет,
                                 <br>я — Игорь Обуховский</div>
@@ -81,8 +81,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide" style="background: url(../img/header-1.png) 50% 50% no-repeat;">
-                        <div class="swiper-content-text" style="color:#fff;">
+                    <div class="swiper-slide slide-img2" style="background: url(../img/header-1.png) 50% 50% no-repeat;">
+                        <div class="swiper-content-text">
                             <div class="title">«ЖирКиллер»</div>
                             <br>
                             <div class="text">
@@ -96,34 +96,15 @@
                     </div>
                 </div>
                 <!-- Add Arrows -->
-                <div class="swiper-button-next"></div>
+                <div class="swiper-button-next hidden-xs"></div>
 
             </div>
-            <!-- <div class="heder-content margin-top-minus50 col-sm-12">
-                <div class="caption-box col-md-11 col-sm-offset-1">
-                    <h1>Мои проекты
-                        <br> это часть <br> меня </h1>
-                </div>
-                <div class="quote-box col-md-10 col-sm-offset-2 hidden-xs">
-                    <p>Основа любого проекта:
-                        <br> онлайн-тренировки + план питания</p>
-                </div>
-                <div class="logo-box col-sm-4 col-md-2  col-sm-offset-2 hidden-xs">
-                    <img src="img/Logo3.png" />
-                    <img src="img/Logo1.png" />
-                    <img src="img/Logo2.png" />
-                </div>
-            </div> -->
         </div>
         <div class="row quote-row col-sm-offset-1 hidden-sm hidden-md hidden-lg">
             <div class="col-xs-12">
-                <p>Основа любого проекта:
-                    <br> онлайн-тренировки + план питания</p>
-            </div>
-            <div class="logo-box col-xs-12">
-                <img src="img/Logo3.png" />
-                <img src="img/Logo1.png" />
-                <img src="img/Logo2.png" />
+                <p>Автор проектов «ЖирКиллер», «Міцні Горішки», «Формы в Норме», экс-тренер 5 сезонов проекта
+                        канала СТБ «Зваженi та щасливi»</p>
+                        <a href="#" class="btn btn-primary btn-slide">Подробнее &#8594;</a>
             </div>
         </div>
         <div class="row child-info-box text-size  col-sm-offset-1">
@@ -142,17 +123,20 @@
                         обрести кубики пресса и стройные бедра. Без спортзала, в домашних условиях, по полчаса в день.</p>
                 </div>
             </div>
+            <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+                <h2>Проекты</h2>
+            </div>
         </div>
         <div class="row row-flex projects-info-box">
-            <div class="col-md-3 padding0 box-img-projects" style="background-image:url(../img/1.png)">
+            <div class="col-sm-3 padding0 box-img-projects hidden-xs" style="background-image:url(../img/1.png)">
             </div>
-            <div class="col-md-9 row-flex-col padding0  background-grey">
+            <div class="col-xs-12 col-sm-9 row-flex-col padding0  background-grey">
                 <div class="info-box box1">
                     <div class="info-box-content">
-                            <img class="icon-btn" src="../img/4.png">
-                        <div class="info-box-text">
+                        <img class="icon-btn" src="../img/4.png">
+                        <div class="info-box-title">
                             <h3>«ЖирКиллер»</h3>
-                            <div>
+                            <div class="badge-box">
                                 <span class="badge badge-white">5</span>
                                 <span>сезонов</span>
                             </div>
@@ -169,9 +153,9 @@
                 <div class="info-box box2">
                     <div class="info-box-content">
                         <img class="icon-btn" src="../img/6.png">
-                        <div class="info-box-text">
+                        <div class="info-box-title">
                             <h3>«Формы в Норме»</h3>
-                            <div>
+                            <div class="badge-box">
                                 <span class="badge badge-white">2</span>
                                 <span>сезона</span>
                             </div>
@@ -188,9 +172,9 @@
                 <div class="info-box box3">
                     <div class="info-box-content">
                         <img class="icon-btn" src="../img/5.png">
-                        <div class="info-box-text">
+                        <div class="info-box-title">
                             <h3>«Міцні горішки»</h3>
-                            <div>
+                            <div class="badge-box">
                                 <span class="badge badge-white">1</span>
                                 <span>сезон</span>
                             </div>
@@ -236,14 +220,14 @@
 
         <div class="row works-info-box works-info-box-img text-size">
             <div class="works-img-caption col-sm-11 col-sm-offset-1">
-                <h2>Почему это работает?</h2>
+                <h2>Почему <br> это работает?</h2>
             </div>
             <div class="works-img-content text-ul col-12 col-sm-11 col-sm-offset-1">
                 <ul class="line-inset line-inset-3">
                     <li class="media">
                         <div class="media-title">
-                            
-                            <span> <img src="img/Icons1.png" /> Все просто</span>
+                            <img class="mobile-icon" src="img/Icons1.png" />
+                            <span> <img class="icon-string" src="img/Icons1.png" /> Все просто</span>
                         </div>
                         <div class="media-content">
                             <p>Здесь не бывает чудо-диет и волшебных таблеток. Нет и не будет места лени. Только регулярные
@@ -252,8 +236,8 @@
                     </li>
                     <li class="media">
                         <div class="media-title">
-                            
-                            <span> <img src="img/Icons2.png" /> Масштаб проектов</span>
+                                <img class="mobile-icon" src="img/Icons2.png" />
+                            <span> <img class="icon-string"  src="img/Icons2.png" /> Масштаб проектов</span>
                         </div>
                         <div class="media-content">
                             <p>Более 30 тыс. участников из 22 стран по всему миру уже изменили свое тело. Присоединяйся к нам!</p>
@@ -261,7 +245,8 @@
                     </li>
                     <li class="media">
                         <div class="media-title">
-                            <span>  <img src="img/Icons3.png" /> Сила мотивации </span>
+                            <img class="mobile-icon" src="img/Icons3.png" />
+                            <span>  <img class="icon-string" src="img/Icons3.png" /> Сила мотивации </span>
                         </div>
                         <div class="media-content">
                             <p>Здесь не бывает чудо-диет и волшебных таблеток. Нет и не будет места лени. Только регулярные
@@ -270,7 +255,8 @@
                     </li>
                     <li class="media">
                         <div class="media-title">
-                            <span> <img src="img/Icons4.png" /> Сила единства </span>
+                            <img class="mobile-icon" src="img/Icons4.png" />
+                            <span> <img class="icon-string" src="img/Icons4.png" /> Сила единства </span>
                         </div>
                         <div class="media-content">
                             <p>У каждого из моих проектов есть свое сообщество. Это твои единомышленники, готовые поддержать,
@@ -279,7 +265,8 @@
                     </li>
                     <li class="media">
                         <div class="media-title">
-                            <span> <img src="img/Icons5.png" /> Моя вера</span>
+                            <img class="mobile-icon" src="img/Icons5.png" />
+                            <span> <img class="icon-string" src="img/Icons5.png" /> Моя вера</span>
                         </div>
                         <div class="media-content">
                             <p>Мои агенты ответят на любой вопрос, помогут разобраться в системе, отправить отчет и не отвлекаться
@@ -288,8 +275,8 @@
                     </li>
                     <li class="media">
                         <div class="media-title">
-                            
-                            <span> <img src="img/Icons6.png" /> Поддержка и помощь </span>
+                            <img class="mobile-icon" src="img/Icons6.png" />
+                            <span> <img class="icon-string" src="img/Icons6.png" /> Поддержка и помощь </span>
                         </div>
                         <div class="media-content">
                             <p>Вера в тебя и твои силы. Я помогал измениться самым разным участникам проектов. Поэтому знаю
@@ -302,13 +289,13 @@
 
         <div class="row sistem-info-box text-size background-white">
             <div class=" col-xs-12 hidden-sm hidden-md hidden-lg">
-                <h2>Утром лекции,
-                    <br> Вечером тренировки</h2>
+                <h2>Уникальная система</h2>
             </div>
-            <div class="col-12 col-xs-4 col-md-6">
-                <img src="img/IMG_PC.png" width="100%">
+            <div class="col-12 col-xs-4 col-sm-6">
+                <img class="hidden-xs" src="img/IMG_PC.png" width="100%">
+                <img class="hidden-sm hidden-md hidden-lg" src="img/7.png" width="100%">
             </div>
-            <div class="col-12 col-sm-4">
+            <div class="col-12 col-sm-6 col-ms-4">
                 <div class="row info-body">
                     <h2 class="hidden-xs">Уникальная система</h2>
                     <div class="col-md-12 info-content line-inset line-inset-3">
@@ -326,14 +313,14 @@
         </div>
 
         <div class="row sistem-info-box command-info-box-img text-size text-white">
-            <div class=" col-xs-12 hidden-sm hidden-md hidden-lg">
-                <h2>Утром лекции,
-                    <br> Вечером тренировки</h2>
+            <div class="command-img-caption col-xs-12">
+                <h2 class="hidden-sm hidden-md hidden-lg">Наша <br>
+                    команда?</h2>
             </div>
-            <div class="col-12 col-sm-4 col-md-offset-4" style="height: 100%;">
-                <div class="row info-body">
-                    <h2>Наша команда</h2>
-                    <div class="col-md-12 info-content line-inset line-inset-3">
+            <div class="command-img-content col-12 col-xs-12 col-sm-4 col-sm-offset-4 padding0">
+                <div class=" col-xs-12 info-body">
+                    <h2 class="hidden-xs">Наша команда</h2>
+                    <div class="info-content line-inset line-inset-3">
                         <p>Эти люди всегда за кадром, их работа может казаться невидимой, но без них ничего не было бы.</p>
                         <a href="#" class="btn btn-primary btn-command">Стать частью команды &#8594;</a>
                     </div>
@@ -342,15 +329,14 @@
         </div>
 
         <div class="row row-flex comment-info-box text-size background-white">
-            <div class=" col-xs-12 hidden-sm hidden-md hidden-lg">
-                <h2>Утром лекции,
-                    <br> Вечером тренировки</h2>
+            <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+                <h2>Отзывы участников</h2>
             </div>
             <div class="col-12 col-xs-4 col-md-6 book-slider">
             </div>
-            <div class="col-12 col-sm-5 row-flex-col">
+            <div class="col-12 col-xs-12 col-sm-5 row-flex-col">
                 <h2 class="hidden-xs">Отзывы участников</h2>
-                <div class="col-md-12 col-lg-11 row-flex-col info-content line-inset">
+                <div class="col-xs-12 col-md-12 col-lg-11 row-flex-col info-content line-inset">
                     <div class="info-box active text-center ">
                         <div class="info-box-content">
                             <div class="info-title text-left">
@@ -421,24 +407,24 @@
         </div>
 
         <div class="row posts-index margin-bottom0 background-grey">
-            <div class="col-xs-11 col-xs-offset-1 posts-title">
-                <div class="col-xs-6 padding0">
+            <div class="col-xs-12 col-sm-11 col-sm-offset-1 posts-title">
+                <div class="col-xs-12 col-sm-6 padding0">
                     <h2>Блог</h2>
                 </div>
-                <div class="col-xs-6">
-                    <a href="#" class="btn btn-primary btn-blog">Все статьи блога &#8594;</a>
+                <div class="col-xs-12 col-sm-6 hidden-xs">
+                    <a href="#" class="btn btn-primary btn-blog background-white">Все статьи блога &#8594;</a>
                 </div>
             </div>
-            <div class="margin-top30 col-sm-1 col-sm-offset-1">
+            <div class="margin-top30 col-sm-1 col-sm-offset-1 hidden-xs">
                 <i class="line-inset"></i>
             </div>
-            <div class="col-sm-10">
+            <div class="col-xs-12 col-sm-10">
                 <div class="post margin-top30 col-md-4">
                     <h3>Как быстро получить пресс с кубиками изменив только питание</h3>
                     <img src="img/IMG_0.png" alt="Как быстро получить пресс с кубиками изменив только питание" class="img-responsive">
                     <div class="excerpt">
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                        aliquam erat volutpat. Ut wisi
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                        aliquam erat volutpat. Ut wisi</p>
                     </div>
                     <hr>
                     <div class="post-meta">
@@ -450,8 +436,8 @@
                     <h3>Как быстро получить пресс с кубиками изменив только питание</h3>
                     <img src="img/IMG_0.png" alt="Как быстро получить пресс с кубиками изменив только питание" class="img-responsive">
                     <div class="excerpt">
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                        aliquam erat volutpat. Ut wisi
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                        aliquam erat volutpat. Ut wisi</p>
                     </div>
                     <hr>
                     <div class="post-meta">
@@ -463,8 +449,8 @@
                     <h3>Как быстро получить пресс с кубиками изменив только питание</h3>
                     <img src="img/IMG_0.png" alt="Как быстро получить пресс с кубиками изменив только питание" class="img-responsive">
                     <div class="excerpt">
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                        aliquam erat volutpat. Ut wisi
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                        aliquam erat volutpat. Ut wisi</p>
                     </div>
                     <hr>
                     <div class="post-meta">
@@ -472,6 +458,9 @@
                         <p class="year">2018</p>
                     </div>
                 </div>
+            </div>
+            <div class="col-xs-12">
+                <a href="#" class="btn btn-primary background-white btn-blog-footer">Все статьи блога &#8594;</a>
             </div>
         </div>
         <footer class="row" style="position: relative;">
