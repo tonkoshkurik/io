@@ -524,9 +524,15 @@
         margin-bottom: 75px;
     }
     .book-slider {
+        img:not(:first-child){
+            display: none;
+        }
+        img{
+            max-width: 100%;
+        }
         background: url(../img/Book.png) no-repeat;
-        background-size: 80%;
-        height: 645px;
+        background-size: 80%; // height: 645px;
+        padding-bottom: 25px;
         @media (max-width: 1700px) {
             background-size: 90%;
         }
@@ -534,10 +540,19 @@
             background-size: 100%;
         }
         @media (max-width: 1330px) {
-            height: 510px;
+            // height: 510px;
         }
         @media (max-width: 767px) {
-            height: 280px;
+            // height: 350px;
+            width: 100%;
+            background: url(../img/Book-min.png) 50% 50% no-repeat;
+            background-size: cover;
+            img,iframe {
+                width:100%;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                padding: 10px;
+            }
         }
     }
     .info-content {
@@ -550,9 +565,9 @@
         background-color: #f9f7fa;
         cursor: unset;
         .info-swiper {
-            img {
-                display: unset;
-                cursor: pointer;
+            padding-left: 0 !important;
+            .input-group-btn {
+                display: contents;
             }
         }
     }
@@ -587,8 +602,10 @@
             padding-right: 0;
             padding-left: 0;
             margin: 0 auto;
-            img {
-                vertical-align: unset;
+            @media (max-width: 767px) {
+                margin: 15px auto;
+            }
+            .input-group-btn {
                 display: none;
             }
             span {
@@ -714,4 +731,44 @@
 
 .margin-bottom0 {
     margin-bottom: 0 !important;
+}
+
+.btn-img-last {
+    background: url(../img/slide-box-last.png) 50% 50% no-repeat;
+}
+
+.btn-img-next {
+    background: url(../img/slide-box-next.png) 50% 50% no-repeat;
+}
+
+.btn-swiper {
+    cursor: pointer;
+    background-size: 30px;
+    padding: 12px 29px;
+    @media (max-width: 767px) {
+        border-radius: 50%;
+        background-color: #f4f2f5;
+    }
+}
+
+.center-pills {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 22px;
+}
+
+.center-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab-btn-white {
+    li a {
+        padding: 3px 15px;
+        color: #000 !important;
+    }
+    li.active a {
+        background-color: #f9f7fa !important;
+    }
 }
