@@ -504,6 +504,10 @@
             background-size: cover;
             height: 480px;
             background-image: url(../img/8.png);
+            h2{
+                color:#000;
+            }
+           
         }
         .command-img-content {
             /* Добавляем фон */
@@ -524,34 +528,62 @@
         margin-bottom: 75px;
     }
     .book-slider {
-        img:not(:first-child){
+        img:not(:first-child) {
             display: none;
         }
-        img{
-            max-width: 100%;
+        img {
+            max-width: 90%;
+            margin-top: 30px;
+            @media (max-width: 1500px) {
+                margin-left: 54px;
+                max-width: 80%; 
+            }
+            @media (max-width: 991px) {
+                margin-left: 30px;
+                margin-top: 15px;
+            }
         }
-        background: url(../img/Book.png) no-repeat;
-        background-size: 80%; // height: 645px;
-        padding-bottom: 25px;
+        iframe{
+            margin-top: 15px;
+            @media (max-width: 1500px) {
+                margin-left: 54px;
+            }
+            @media (max-width: 991px) {
+                margin-left: 30px;
+            }
+        }
+        background: url(../img/Book.png) 36% 0% no-repeat;
+        padding-bottom: 120px;
+        background-size: 80%;
         @media (max-width: 1700px) {
             background-size: 90%;
         }
         @media (max-width: 1500px) {
+            padding-bottom:72px;
             background-size: 100%;
         }
         @media (max-width: 1330px) {
             // height: 510px;
         }
+        @media (max-width: 991px) {
+            background: url(../img/Book.png) 50% 50% no-repeat;
+            background-size: 100%;
+        }
         @media (max-width: 767px) {
             // height: 350px;
             width: 100%;
             background: url(../img/Book-min.png) 50% 50% no-repeat;
-            background-size: cover;
-            img,iframe {
-                width:100%;
-                margin-top: 10px;
-                margin-bottom: 10px;
-                padding: 10px;
+            background-size: contain;
+            padding-bottom: 0;
+            img,
+            iframe {
+                width: 100%;
+                padding: 5px 25px 25px 25px;
+                margin-left: -5px;
+                max-width: 100%;
+            }
+            iframe{
+                padding: 5px 31px 36px 37px;
             }
         }
     }
@@ -583,6 +615,12 @@
         .info-text {
             flex-basis: 25%;
         }
+        @media (max-width: 991px) and (min-width: 767px) {
+            padding: 5px 20px;
+            .info-title{
+                display: grid;
+            }
+        }
         .info-title,
         .info-swiper,
         .info-text {
@@ -609,20 +647,22 @@
                 display: none;
             }
             span {
-                font-size: 2.2vw;
-                margin-left: 10%;
-                margin-right: 10%;
+                font-size: 2.2vw; // margin-left: 10%;
+                // margin-right: 10%;
             }
         }
     }
     .line-inset {
         padding-left: 110px;
-        @media (max-width: 767px) {
+        @media (max-width: 991px) {
             padding-left: 0;
         }
     }
     .line-inset::before {
         top: 17%;
+        @media (max-width: 991px) {
+            width: 0;
+        }
     }
     @media (max-width: 767px) {
         flex-direction: column;
@@ -770,5 +810,11 @@
     }
     li.active a {
         background-color: #f9f7fa !important;
+    }
+}
+
+.font-size32{
+    @media (max-width: 767px) {
+    font-size: 32px !important;
     }
 }
