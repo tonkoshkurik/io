@@ -635,6 +635,9 @@
             iframe {
                 padding: 5px 31px 36px 37px;
             }
+            .video-panel{
+                padding: 5px 0px 25px 0px;
+            }
         }
     }
     .info-content {
@@ -846,7 +849,7 @@
 .center-pills {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 22px;
+    margin-bottom: 7px;
 }
 
 .center-img {

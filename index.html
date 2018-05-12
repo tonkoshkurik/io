@@ -348,13 +348,13 @@
                 <h2>Отзывы участников</h2>
                 <ul class="nav nav-pills text-center center-pills tab-btn-white">
                     <li class="active">
-                        <a data-toggle="tab" href=".photo-panel">Фото</a>
+                        <a class="tab-menu-comment" data-toggle="tab" href=".photo-panel">Фото</a>
                     </li>
                     <li>
-                        <a data-toggle="tab" href=".comment-panel">Отзывы</a>
+                        <a class="tab-menu-comment" data-toggle="tab" href=".comment-panel">Отзывы</a>
                     </li>
                     <li>
-                        <a data-toggle="tab" href=".video-panel">Видео</a>
+                        <a class="tab-menu-comment" data-toggle="tab" href=".video-panel">Видео</a>
                     </li>
                 </ul>
             </div>
@@ -377,13 +377,14 @@
                         <a href="https://www.youtube.com/embed/Ni9LIPaIKOg"></a>
                         <a href="https://www.youtube.com/embed/fU8Gej4UNiw"></a>
                     </div>
-                    <div class="comment-button-next hidden-xs" tabindex="0" role="button" aria-label="Next slide"></div>
+                    <div class="comment-button-next hidden-xs btn-img-next" data-name-box="photo"></div>
                 </div>
             </div>
+
             <div class="col-12 col-xs-12 col-sm-4 col-md-6 row-flex-col">
                 <h2 class="hidden-xs">Отзывы участников</h2>
                 <div class="nav col-xs-12 col-md-12 col-lg-11 row-flex-col info-content line-inset">
-                    <div class="photo-panel info-box active text-center" data-href=".photo-panel">
+                    <div class="info-box active text-center" name="photo-panel-box">
                         <div class="info-box-content">
                             <div class="info-title text-left">
                                 <img src="../img/photo.png" />
@@ -406,7 +407,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="comment-panel info-box text-center" data-href=".comment-panel">
+                    <div class="info-box text-center" name="comment-panel-box">
                         <div class="info-box-content">
                             <div class="info-title text-left">
                                 <img src="../img/sms.png" />
@@ -429,7 +430,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="video-panel info-box text-center" data-href=".video-panel">
+                    <div class="info-box text-center" name="video-panel-box">
                         <div class="info-box-content">
                             <div class="info-title text-left">
                                 <img src="../img/video.png" />
@@ -576,7 +577,6 @@
             },
         });
     </script>
-
     <script src="js/jquery.spincrement.min.js"></script>
     <script>
         $(document).ready(function () {
@@ -610,6 +610,40 @@
             });
 
             $(".swiper-slide").css('background-size', 'cover');
+
+           
+
+            $('.tab-menu-comment').on("click", function () {
+                var href = $(this).attr("href").substr(1);
+                if(!$('[name="' + href + '-box"]').hasClass('active')){
+                    $(".comment-info-box .info-box").removeClass("active");
+                    $('[name="' + href + '-box"]').addClass("active");
+                }
+            })
+            $('[name="photo-panel-box"]').on("click", function () {
+                if(!$(this).hasClass('active')){
+                    $('a[href=".photo-panel"]').click();
+                    $(".comment-info-box .info-box").removeClass("active");
+                    $(this).addClass("active");
+                    $(".comment-button-next").data("name-box","photo");
+                }
+            });
+            $('[name="comment-panel-box"]').on("click", function () {
+                if(!$(this).hasClass('active')){
+                    $('a[href=".comment-panel"]').click();
+                    $(".comment-info-box .info-box").removeClass("active");
+                    $(this).addClass("active");
+                    $(".comment-button-next").data("name-box","comment");
+                }
+            });
+            $('[name="video-panel-box"]').on("click", function () {
+                if(!$(this).hasClass('active')){
+                    $('a[href=".video-panel"]').click();
+                    $(".comment-info-box .info-box").removeClass("active");
+                    $(this).addClass("active");
+                    $(".comment-button-next").data("name-box","video");
+                }
+            });
         });
     </script>
     <!-- Swiper JS -->
@@ -625,19 +659,6 @@
             var urlFirstVideo = $("#url-video a").first().attr("href");
             var width = $(".comment-info-box .book-slider #img-photo img").first().width();
             var height = $(".comment-info-box .book-slider #img-photo img").first().height();
-            //var percentWidthVideo = 60;
-
-            // if($(document).width() < 1450){
-            //     percentWidthVideo = 80;
-            //     height = height - 50;
-            // }
-
-            // if( $(document).width() < 767){
-            //     percentWidthVideo = 60;
-            // }
-            //console.log(width);
-            //width = ((width / 100) * percentWidthVideo); 
-            // console.log(width);
             $("#url-video .js-element-iframe").first().attr({ "width": width, "height": height });
             var $iframe = $("#url-video .js-element-iframe").first().clone().removeClass().addClass("old-iframe").attr("src", urlFirstVideo);
             $("#url-video").append($iframe);
@@ -646,7 +667,6 @@
         var currentPhoto = 1;
         var kolvoPhoto = $("#img-photo img[name='photo']").length;
         var photo = new Array();
-
         $.each($("#img-photo img[name='photo']"), function (key, value) {
             photo[key] = new Image();
             photo[key].src = $(this).attr("src");
@@ -655,7 +675,6 @@
         var currentComment = 1;
         var kolvoComment = $("#img-comment img[name='comment']").length; //количество картинок
         var comment = new Array();
-
         $.each($("#img-comment img[name='comment']"), function (key, value) {
             comment[key] = new Image();
             comment[key].src = $(this).attr("src");
@@ -670,8 +689,8 @@
 
 
         $(".btn-img-next").on("click", function () {
-            var nameBox = $(this).data("name-box");
 
+            var nameBox = $(this).data("name-box");
             switch (nameBox) {
                 case "photo":
                     if (currentPhoto < kolvoPhoto) swipeElement($(this), ++currentPhoto, nameBox)
@@ -688,6 +707,7 @@
         })
 
         $(".btn-img-last").on("click", function () {
+
             var nameBox = $(this).data("name-box");
             switch (nameBox) {
                 case "photo":
@@ -703,19 +723,21 @@
         })
 
         function swipeElement($this, current, nameBox) {
-            console.log(current, nameBox);
+
             var numPhoto = addZero(current);
-            $this.parents(".group-quantity").find(".quantity").text(numPhoto);
 
             switch (nameBox) {
                 case "photo":
                     document.images['photo'].src = photo[current - 1].src;
+                    $('[name="photo-panel-box"]').find(".quantity").text(numPhoto);
                     break;
                 case "comment":
                     document.images['comment'].src = comment[current - 1].src;
+                    $('[name="comment-panel-box"]').find(".quantity").text(numPhoto);
                     break;
                 case "video":
                     $("#url-video .old-iframe").remove();
+                    $('[name="video-panel-box"]').find(".quantity").text(numPhoto);
 
                     var $iframe = $("#url-video .js-element-iframe")
                         .first()
