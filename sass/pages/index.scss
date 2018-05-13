@@ -410,6 +410,10 @@
         }
     }
     .media:hover {
+        color: #edf0df;
+        .media-title span{
+            color: #edf0df;
+        }
         @media (min-width: 990px) {
             background-color: #343035;
             cursor: pointer;
@@ -950,6 +954,9 @@
         margin-right: 12.5%;
     }
 }
+.comment-button-next:hover{
+    background-color: #dff0ef;
+}
 
 .works-info-box-img2 {
     position: relative;
@@ -967,4 +974,8 @@
     @media (min-width: 540px) {
         background-color: #312d32;
     }
+}
+
+.active-white ul.menu a {
+    color: #fff;
 }

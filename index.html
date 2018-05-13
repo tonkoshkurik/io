@@ -99,7 +99,7 @@
                     </div>
                 </div>
                 <!-- Add Arrows -->
-                <div class="swiper-button-next hidden-xs"></div>
+                <a class="swiper-button-next hidden-xs" href="#"></a>
 
             </div>
         </div>
@@ -379,7 +379,7 @@
                         <a href="https://www.youtube.com/embed/Ni9LIPaIKOg"></a>
                         <a href="https://www.youtube.com/embed/fU8Gej4UNiw"></a>
                     </div>
-                    <div class="comment-button-next hidden-xs btn-img-next" data-name-box="photo"></div>
+                    <a class="comment-button-next hidden-xs btn-img-next" data-name-box="photo"></a>
                 </div>
             </div>
 
@@ -402,7 +402,7 @@
                                 </span>
                             </div>
                             <div class="info-count-post">
-                                <span>22</span>
+                                <span>05</span>
                             </div>
                             <div class="info-text">
                                 <span>Все отзывы</span>
@@ -425,7 +425,7 @@
                                 </span>
                             </div>
                             <div class="info-count-post">
-                                <span>22</span>
+                                <span>03</span>
                             </div>
                             <div class="info-text">
                                 <span>Все отзывы</span>
@@ -448,7 +448,7 @@
                                 </span>
                             </div>
                             <div class="info-count-post">
-                                <span>22</span>
+                                <span>02</span>
                             </div>
                             <div class="info-text">
                                 <span>Все отзывы</span>
@@ -568,7 +568,7 @@
     <script src="js/swiper.min.js"></script>
     <!-- Initialize Swiper -->
     <script>
-        var swiper = new Swiper('.swiper-container', {
+        var mySwiper = new Swiper('.swiper-container', {
             navigation: {
                 nextEl: '.swiper-button-next'
             },
@@ -577,6 +577,19 @@
                 el: '.swiper-pagination',
                 clickable: true,
             },
+        });
+        mySwiper.on('slideNextTransitionEnd', function () {
+            var activeSlide = parseInt(this.activeIndex);
+            if(activeSlide === 2){
+                $(".swiper-button-next").addClass("swiper-button2");
+                $(".menu-overlay").addClass("active-white");
+                 
+            }
+            else{
+                $(".swiper-button-next").removeClass("swiper-button2");
+                $(".menu-overlay").removeClass("active-white");
+            }
+
         });
     </script>
     <script src="js/jquery.spincrement.min.js"></script>
