@@ -4,6 +4,9 @@
 .header.main {
     background: $bg-main;
     margin-bottom: 30px;
+    @media (max-width: 767px) {
+        margin-bottom: 0;
+    }
     header {
         display: flex;
         justify-content: space-between;
