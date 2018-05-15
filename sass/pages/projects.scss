@@ -63,9 +63,9 @@
         .img-mobail-box {
             order: 1;
             width: 30%;
-            // img{
-            //     width: 176%;
-            // }
+            .img-mobail{
+                width: 170%;
+            }
         }
         .information-text-box {
             order: 0;
@@ -75,6 +75,7 @@
             order: -2;
             width: 30%;
         }
+       
         
     }
 }
@@ -108,9 +109,10 @@
     top: 140px;
     position: relative;
     float: right;
-    width: 80%;
+    width: 100%;
     filter: grayscale(100%);
     @media(max-width: 767px) {
+        top: 0;
         float: none;
         filter: none;
         position: sticky;
