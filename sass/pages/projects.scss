@@ -44,6 +44,8 @@
     color: #000;
     background-color:#fff;
     font-weight: 400;
+    border-radius: 17px;
+    padding: 0px 10px;
 }
 
 @media(max-width: 767px) {
@@ -145,7 +147,7 @@
     @media (max-width: 767px) {
         margin-bottom: 0 !important;
         float: right;
-        width: 70%;
+        // width: 70%;
         max-width: 74px;
     }
 }
@@ -154,6 +156,7 @@
     margin-top: 70px;
     margin-bottom: 70px;
     font-size: 16px;
+    color: #312d32;
     @media (max-width: 1500px) {
         margin-top: 45px;
         margin-bottom: 45px;
@@ -162,5 +165,14 @@
         margin-top: 30px;
         margin-bottom: 30px;
         padding: 0;
+    }
+}
+.btn-dop-info:hover{
+    font-weight: 700;
+}
+
+@media (max-width: 320px) and (max-width: 768px){
+    .text-size h2.project {
+        font-size: 24px;
     }
 }
