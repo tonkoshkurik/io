@@ -239,14 +239,14 @@
     p,
     span {
         line-height: 1.8;
-        font-size: 0.9vw;
+        //font-size: 0.9vw;
+        font-size: 18px;
     }
-    @media all and(max-width: 1500px) {
+    @media all and(max-width: 1450px) {
         p,
         span {
             line-height: 1.8;
             font-size: 1.1vw;
-            //font-size: 1.0vw;
         }
     }
     @media ( max-width: 990px) {
@@ -282,5 +282,12 @@
 @media (max-width: 540px) {
     .col-12 {
         width: 100%;
+    }
+}
+
+.about-btn {
+    margin-top: 35px;
+        .arrow-alt-right{
+            padding: 30px 45px;
     }
 }
