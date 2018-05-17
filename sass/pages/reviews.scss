@@ -70,12 +70,15 @@
         }
     }
 }
-
+.comments-index.photo-page .comment {
+    padding: 0;
+}
 .comments-index {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 100px;
     color:#312d32;
+    
     .comment {
         // flex-basis: 640px;
         // max-width: 640px;
@@ -101,16 +104,18 @@
                     max-width: 100%;
                 }
                 @media all and( min-width: 767px) {
-                background-image: url(../img/facebook-logo.png);
-                background-repeat: no-repeat;
-                background-color: #f5f6f8;
-                min-height: 400px;
-                display: flex;
-                flex-direction:column;
-                justify-content:center;
-                align-items:center;
+                    background-image: url(../img/facebook-logo.png);
+                    background-repeat: no-repeat;
+                    background-color: #f5f6f8;
+                    min-height: 400px;
+                    display: flex;
+                    flex-direction:column;
+                    justify-content:center;
+                    align-items:center;
+                }
             }
-                
+            .comment-img img{
+                width: 100%;
             }
             .comment-footer {
                 // display: flex;
@@ -136,6 +141,12 @@
                         .user-medal {
                             order: 1;
                         }
+                    }
+                }
+                .name-user.page-photo{
+                    justify-content: space-between;
+                    .user-medal {
+                        order: 1;
                     }
                 }
                 .slim {
@@ -180,6 +191,14 @@
                         }
                     }
                 }
+                .slim.page-photo{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 10px;
+                    label{
+                        font-size: 18px;
+                    }
+                }
                 .dop-info{
                     margin-top: 40px;
                 }
@@ -203,5 +222,8 @@
 }
 .box-header-min.pink{
     background-color: #f0dfdf; 
+}
+.margin0{
+    margin: 0;
 }
 
