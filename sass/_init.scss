@@ -12,9 +12,9 @@ $bg-footer: #312d32;
 body {
     // background-color: #f5f5f5;
     color: #7f7c7c;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans',  sans-serif;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 300;
     // line-height: 1.5;
     padding: 0;
     p, ul {
@@ -23,7 +23,8 @@ body {
 }
 h1, h2, h3, h4, h5, h6 {
     color: #0f080d;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans',  sans-serif;
+    font-size: 18px;
     font-weight: 400;
     line-height: 1.4;
     text-transform: none;

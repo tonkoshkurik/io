@@ -45,17 +45,26 @@
     }
     .title {
         font-size: 3.1vw;
-        font-weight: 300;
+        font-weight: 400;
         @media (max-width: 540px) {
-            font-size: 22px;
+            font-size: 24px;
+            span{
+                margin-top: -40px;
+            }
         }
     }
     .text {
-        font-size: 14px;
-        max-width: 350px;
+        font-size: 0.9375vw;
+        max-width: 400px;
         line-height: 1.3;
         margin-left: 130px;
         margin-top: 100px;
+        @media (max-width: 1460px) {
+            font-size:1.25vw
+        }
+        @media (max-width: 1020px) {
+            font-size:1.6vw
+        }
         @media (max-width: 1220px) {
             margin-top: 75px;
         }
@@ -67,7 +76,8 @@
         margin-left: 130px;
         margin-top: 150px;
         a {
-            padding: 18px 45px;
+            padding: 25px 30px;
+            font-size: 18px;
         }
         @media (max-width: 1530px) {
             margin-top: 90px;
@@ -84,7 +94,7 @@
 }
 
 .swiper-button-next {
-    font-size: 18px;
+    font-size: 0.9375vw;
     border-radius: 50%;
     padding: 35px 35px;
     background-color: #383339;
@@ -135,7 +145,16 @@
                     height: 90%;
                 }
                 p {
-                    font-size: 18px;
+                    font-size: 0.9375vw;
+                    @media (max-width: 1460px) {
+                        font-size:1.25vw
+                    }
+                    @media (max-width: 1020px) {
+                        font-size:1.6vw
+                    }
+                    @media (max-width: 767px) {
+                        font-size:16px;
+                    }
                     margin: 0;
                     height: 90%;
                 }
@@ -144,7 +163,16 @@
                     font-size: 17px;
                 }
                 .badge {
-                    font-size: 18px;
+                    font-size: 0.9375vw;
+                    @media (max-width: 1460px) {
+                        font-size:1.25vw
+                    }
+                    @media (max-width: 1020px) {
+                        font-size:1.6vw
+                    }
+                    @media (max-width: 767px) {
+                        font-size:16px;
+                    }
                     border-radius: 50%;
                     padding: 12px 15px;
                 }
@@ -196,19 +224,37 @@
     }
     .box1:hover a {
         color: #00528b;
+        i{
+            background-image: url(../img/swiper-button-next-blue2.png);
+        }
+        
     }
     .box2:hover a {
         color: #dd4413;
+        i{
+            background-image: url(../img/swiper-button-next-read.png);
+        }
     }
     .box3:hover a {
         color: #97319e;
+        i{
+            background-image: url(../img/swiper-button-next-purple.png);
+        }
     }
     @media (min-width: 767px) {
         .icon-project {
             filter: grayscale(100%);
         }
-        .info-box:hover {
+        .info-box.box1:hover{
+            background-color: #e2eaf0;
+        }
+        .info-box.box2:hover{
             background-color: #ffeae3;
+        }
+        .info-box.box3:hover{
+            background-color: #ede2ee;
+        }
+        .info-box:hover {
             cursor: pointer;
             .icon-btn {
                 display: unset;
@@ -232,7 +278,7 @@
             padding: 25px 15px;
             .info-box-content {
                 .info-box-text {
-                    font-size: 18px;
+                    font-size: 0.9375vw;
                     .btn {
                         padding-top: 30px;
                     }
@@ -843,14 +889,13 @@
     margin-top: 30px !important;
     h3 {
         margin-top: 0;
-        font-size: 1.0vw;
-        font-weight: 700;
+        font-size: 18px;
         @media (max-width: 767px) {
             font-size: 16px;
         }
     }
     p {
-        font-size: 1.0vw;
+        font-size: 18px;
         @media (max-width: 767px) {
             font-size: 12px;
             line-height: 1.5;
