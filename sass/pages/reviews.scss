@@ -131,8 +131,9 @@
                         padding: 0 3px 0 3px;
                     }
                     span i {
-                        padding: 5px;
-                        background-color: #dff0ef;
+                        padding: 5px 7px;
+                        //background-color: #dff0ef;
+                        background-color:#f0dfdf;
                         color: #000;
                         border-radius: 15px;
                         margin-right: 5px;
@@ -143,4 +144,8 @@
             }
         }
     }
+}
+
+.header.main.pink{
+    background-color: #f0dfdf;
 }

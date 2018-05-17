@@ -289,13 +289,20 @@
     background-color: #dff0ef;
     cursor: pointer;
     border-radius: 50%;
-    padding: 20px 30px;
+    padding: 20px 33px;
     margin-top: -17px;
     margin-right: 15px;
 }
 .last-page-btn:hover{
     background-image: url(../img/swiper-button-next.white.png);
     background-color: #312d32;
+}
+
+.last-page-btn.left{
+    background-image: url(../img/swiper-button-left-black.png);
+}
+.last-page-btn:hover.left{
+    background-image: url(../img/swiper-button-left.png);
 }
 
 .arrow-alt-right{
