@@ -301,21 +301,32 @@
     background-image: url(../img/swiper-button-left.png);
 }
 
-.arrow-alt-right{
-    background-image: url(../img/swiper-button-next.white.png);
+.arrow-alt-right,
+.arrow-alt-down{
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: center;
     padding: 30px 30px;
 }
-.arrow-alt-right.black{
-    background-image: url(../img/swiper-button-next.png);
-}
-.arrow-alt-right.blue{
-    background-image: url(../img/swiper-button-next-blue.png);
+.arrow-alt-right{
+    background-image: url(../img/swiper-button-next.white.png);
+    &.black{
+        background-image: url(../img/swiper-button-next.png);
+    }
+    &.blue{
+        background-image: url(../img/swiper-button-next-blue.png);
+    }
 }
 .btn-primary:hover .arrow-alt-right{
     background-image: url(../img/swiper-button-next.png);
+    
+}
+.arrow-alt-down{
+    background-image: url(../img/long-arrow-alt-down-white.png);
+}
+.btn-primary:hover .arrow-alt-down{
+    background-image: url(../img/long-arrow-alt-down.png);
+    
 }
 
 .background-light-grey{
