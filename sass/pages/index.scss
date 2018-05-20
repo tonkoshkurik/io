@@ -76,7 +76,7 @@
         margin-left: 130px;
         margin-top: 150px;
         a {
-            padding: 25px 30px;
+            padding: 15px 30px;
             font-size: 18px;
         }
         @media (max-width: 1530px) {
@@ -224,21 +224,21 @@
     }
     .box1:hover a {
         color: #00528b;
-        i{
-            background-image: url(../img/swiper-button-next-blue2.png);
+        svg{
+            fill: #00528b;
         }
         
     }
     .box2:hover a {
         color: #dd4413;
-        i{
-            background-image: url(../img/swiper-button-next-read.png);
+        svg{
+            fill: #dd4413;
         }
     }
     .box3:hover a {
         color: #97319e;
-        i{
-            background-image: url(../img/swiper-button-next-purple.png);
+        svg{
+            fill: #97319e;
         }
     }
     @media (min-width: 767px) {
@@ -912,13 +912,17 @@
 
 .background-white {
     background-color: #fff;
-    color: #000;
-    border-color: #fff;
+   
 }
 
 .btn-blog {
     float: right;
     margin-top: 55px;
+    background-color: #fff;
+    padding: 10px 20px;
+    color: #000;
+    border-color: #fff;
+    border: 0;
 }
 
 .btn-blog-footer {
