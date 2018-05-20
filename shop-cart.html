@@ -18,7 +18,7 @@
 <body>
     <div class="page container-fluid">
         <div class="row header main">
-            <div class="col-md-8 col-xs-offset-1">
+            <div class="col-xs-12 col-md-8 col-sm-offset-1">
                 <header>
                     <div class="logo box">
                         <img src="img/logo.png" alt="Igor Obuhovsky logo">
@@ -65,7 +65,7 @@
         </div>
 
         <div class="row two-header">
-            <div class="box-header-min cart">
+            <div class="col-xs-12 col-sm-11 col-sm-offset-1 box-header-min cart">
                 <div class="menu-item">
                     <h1>Магазин</h1>
                 </div>
@@ -76,7 +76,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-xs-offset-1">
+            <div class="col-xs-12 col-sm-11  col-sm-offset-1">
                 <div class="col-xs-12 col-sm-9 two-header-shop">
                     <div class="box-header top-0">
                         <h1>Магазин</h1>
@@ -104,7 +104,7 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row hidden-xs">
             <div class="col-xs-12 col-xs-11 col-sm-offset-1">
                 <ol class="breadcrumb">
                     <li>
@@ -119,7 +119,11 @@
         </div>
         <div class="row product-desc">
             <div class="col-xs-12 col-sm-5 col-md-5 col-sm-offset-1 col-lg-3 col-lg-offset-1">
+                <h2 class="visible-xs product-title">Майка белая</h2>
                 <div class="row product-photo">
+                    <div class="col-xs-12 visible-xs label-box">
+                        <span class="label-product label-new">Новинка</span>
+                    </div>
                     <div class="col-xs-12 slider-product-for">
                         <img src="img/product-img/Group1.png">
                         <img src="img/product-img/Group2.png">
@@ -136,11 +140,10 @@
                     </div>
                 </div>
             </div>
-
             <div class="col-xs-12 col-sm-4 col-md-4 col-sm-offset-1 col-lg-3 col-lg-offset-1">
                 <div class="row product-info">
-                    <div class="col-xs-12 title-box">
-                        <h2 class="margin0">Майка белая</h2>
+                    <div class="col-xs-12 title-box hidden-xs">
+                        <h2>Майка белая</h2>
                     </div>
                     <div class="col-xs-12 product-size">
                         <h4>Размер:</h4>
@@ -165,19 +168,19 @@
                             <i class="arrow-alt-down"></i>
                         </button>
                     </div>
-                    <div class="col-xs-12 product-description">
+                    <div class="col-xs-12 product-description  hidden-xs">
                         <p>Футболка из высокаокачественных материалов, предназначенная дляФутболка из</p>
                     </div>
-                    <div class="col-xs-12 info-button-box">
-                        <a class="red-tooltip" href="#" data-toggle="tooltip" data-placement="right" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d!">
+                    <div class="col-xs-12 info-button-box  hidden-xs">
+                        <a class="red-tooltip" data-toggle="tooltip" data-placement="right" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d!">
                             <i class="icon-info delivery"></i>
                             Доставка
                         </a>
-                        <a href="#" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d!">
+                        <a data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d!">
                             <i class="icon-info payment"></i>
                             Оплата
                         </a>
-                        <a href="#" data-toggle="tooltip" data-placement="left" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d!">
+                        <a data-toggle="tooltip" data-placement="left" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d!">
                             <i class="icon-info guarantee"></i>
                             Гарантия
                         </a>
@@ -187,8 +190,12 @@
 
             <div class="col-xs-12 col-sm-11 col-sm-offset-1 col-lg-2 col-lg-offset-1">
                 <div class="row products-compositions">
-                    <div class="col-xs-12 title-box">
+                    <div class="col-xs-12 title-box  hidden-xs">
                         <span class="label-product-new">Новинка</span>
+                    </div>
+                    <div class="col-xs-12 product-features visible-xs">
+                        <h4>О товаре:</h4>
+                        <p>Футболка из высокаокачественных материалов, предназначенная дляФутболка из</p>
                     </div>
                     <div class="col-xs-12 compositions-box">
                         <h4>Состав:</h4>
@@ -207,6 +214,61 @@
                         <h4>Особенности:</h4>
                         <p>Футболка из высокаокачественных материалов, предназначенная дляФутболка из высокаокачественных материалов,
                             предназначенная для</p>
+                    </div>
+                    <div class="info-button-box col-xs-12 visible-xs">
+                        <div class="panel-group" id="accordion">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                            <i class="icon-info delivery"></i>
+                                            <span>Доставка</span>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dol</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                            <i class="icon-info payment"></i>
+                                            <span>Оплата</span>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dol</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                            <i class="icon-info guarantee"></i>
+                                            <span>Гарантия</span>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dol</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
