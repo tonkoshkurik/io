@@ -255,23 +255,6 @@
                 img {
                     width: 100%;
                 }
-                .label-product {
-                    position: absolute;
-                    top: 0;
-                    padding: 0px 15px;
-                    background-color: #c9c0c0;
-                    color: #fff;
-                    font-size: 14px;
-                }
-                .label-top {
-                    background-color: #fab600;
-                }
-                .label-new {
-                    background-color: #90c772;
-                }
-                .label-discount {
-                    background-color: #f7637f;
-                }
             }
         }
         .product-footer {
@@ -310,3 +293,22 @@
         }
     }
 }
+
+.label-product {
+    position: absolute;
+    top: 0;
+    padding: 0px 15px;
+    background-color: #c9c0c0;
+    color: #fff;
+    font-size: 14px;
+    &.label-top {
+        background-color: #fab600;
+    }
+    &.label-new {
+        background-color: #90c772;
+    }
+    &.label-discount {
+        background-color: #f7637f;
+    }
+}
+
