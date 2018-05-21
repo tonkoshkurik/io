@@ -315,3 +315,26 @@
     background-color: #f7637f;
   }
 }
+
+.header.main.green {
+  background-color: #e5f0df;
+}
+.next-page-btn {
+  &.green {
+    background-color: #e5f0df;
+  }
+  &:hover{
+    background-color: #312d32;
+  }
+
+}
+.navigation ul.green li.active a {
+  background-color: #e5f0df;
+  color: #312d32;
+}
+.box-header-min.green {
+  background-color: #e5f0df;
+}
+.label.green {
+  background-color: #e5f0df !important;
+}
