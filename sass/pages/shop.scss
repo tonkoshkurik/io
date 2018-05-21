@@ -316,6 +316,93 @@
   }
 }
 
+#modal-cart {
+  .modal-content {
+    padding: 10px;
+    @media (max-width: 767px) {
+      padding: 0;
+    }
+    border: none;
+    border-radius: 0;
+    color: #312d32;
+    .product-box {
+      margin: 20px 0;
+      .row {
+        margin-bottom: 20px;
+      }
+    }
+    .btn-close {
+      background-color: #cbcbcb;
+      border: none;
+      &:hover {
+        background-color: #e5f0df;
+      }
+    }
+    .btn-close-modal {
+      margin-top: -40px;
+      margin-right: -40px;
+      @media (max-width: 767px) {
+        margin-top: -25px;
+        margin-right: -25px;
+      }
+      background-color: #000;
+    }
+    .modal-header,
+    .modal-footer {
+      border: none;
+    }
+    .modal-footer {
+      .price-block {
+        display: flex;
+        justify-content: center;
+        @media (max-width: 767px) {
+          flex-wrap:wrap;
+          flex-direction: column-reverse;
+        }
+        .order-price{
+          font-weight: 400;
+          padding: 20px;
+          width: 50%;
+          background-color: #e5f0df;
+          display: flex;
+          justify-content:space-between;
+          align-items:center;
+          @media (max-width: 767px) {
+            width: 100%;
+          }
+        }
+        button{
+          width: 50%;
+          @media (max-width: 767px) {
+            width: 100%;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+    .group-quantity {
+      width: 60%;
+      margin: 0;
+      @media (max-width: 767px) {
+        width: 100%;
+        padding-left: 0 !important;
+      }
+    }
+    .price-box {
+      text-align: right;
+      font-size: 24px;
+      @media (max-width: 767px) {
+        text-align: left;
+        margin-top: 20px;
+      }
+    }
+    .price-box,
+    .title-box {
+      font-weight: 400;
+    }
+  }
+}
+
 .header.main.green {
   background-color: #e5f0df;
 }
@@ -323,10 +410,9 @@
   &.green {
     background-color: #e5f0df;
   }
-  &:hover{
+  &:hover {
     background-color: #312d32;
   }
-
 }
 .navigation ul.green li.active a {
   background-color: #e5f0df;
