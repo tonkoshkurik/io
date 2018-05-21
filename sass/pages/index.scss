@@ -786,10 +786,22 @@
         .info-count-post,
         .info-text {
             color: #a3a2a4;
+            white-space: nowrap;
         }
         .info-title {
+            @media (min-width: 767px) {
+                display: flex;
+                align-items:center;
+            }
             img {
+                width: 22px;
+                height: 22px;
                 margin-right: 15px;
+                @media (max-width: 1150px) {
+                    width: 18px;
+                    height: 18px;
+                    margin-right: 10px;
+                }
             }
         }
         .info-swiper {
@@ -846,7 +858,7 @@
     margin-top: 70%;
     margin-bottom: 20%;
     font-size: 18px;
-    padding: 15px 25px;
+    // padding: 15px 25px;
     color: #000;
     border-color: #fff;
     background-color: #edf0df;
