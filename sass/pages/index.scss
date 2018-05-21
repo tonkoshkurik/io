@@ -857,6 +857,7 @@
         margin-left: 0;
         width: 100%;
         margin-bottom: 0;
+        padding: 10px 25px;
     }
 }
 
@@ -923,16 +924,13 @@
     color: #000;
     border-color: #fff;
     border: 0;
-}
-
-.btn-blog-footer {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    width: 100%;
-    @media (min-width: 767px) {
-        display: none;
+    @media (max-width: 767px) {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        float: left;
     }
 }
+
 
 .margin-bottom0 {
     margin-bottom: 0 !important;
