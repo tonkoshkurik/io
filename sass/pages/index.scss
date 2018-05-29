@@ -76,7 +76,7 @@
         margin-left: 130px;
         margin-top: 150px;
         a {
-            padding: 15px 30px;
+            padding: 10px 30px;
             font-size: 18px;
         }
         @media (max-width: 1530px) {
@@ -747,7 +747,7 @@
     .info-content {
         margin-bottom: 175px;
         @media (max-width: 767px) {
-            margin-bottom: 20px;
+            margin-bottom: 0;
         }
     }
     .info-box.active {
@@ -811,6 +811,9 @@
             margin: 0 auto;
             @media (max-width: 767px) {
                 margin: 15px auto;
+                flex-basis: 90%;
+    display: flex;
+    justify-content: space-between;
             }
             .input-group-btn {
                 display: none;
@@ -824,7 +827,7 @@
     .line-inset {
         padding-left: 110px;
         @media (max-width: 991px) {
-            padding-left: 0;
+            padding: 0;
         }
     }
     .line-inset::before {
@@ -841,6 +844,7 @@
         .info-box.active {
             background-color: unset;
             display: block;
+            padding: 0;
         }
         .info-title,
         .info-count-post,
@@ -848,7 +852,7 @@
             display: none;
         }
         .info-swiper span {
-            font-size: 30px !important;
+            font-size: 40px !important;
         }
     }
 }
@@ -948,21 +952,42 @@
     margin-bottom: 0 !important;
 }
 
-.btn-img-last {
-    background: url(../img/slide-box-last.png) 50% 50% no-repeat;
-}
-
-.btn-img-next {
-    background: url(../img/slide-box-next.png) 50% 50% no-repeat;
+.btn-swiper.btn-img-last svg{
+    transform: rotate(180deg);
 }
 
 .btn-swiper {
+    &:hover{
+        text-decoration: none;
+    }
     cursor: pointer;
     background-size: 30px;
-    padding: 12px 29px;
+    //padding: 8px 28px;
+    @media (max-width: 1200px) and (min-width: 1200px) {
+        background-size: 20px;
+    }
     @media (max-width: 767px) {
         border-radius: 50%;
         background-color: #f4f2f5;
+    }
+    svg{
+        padding: 0px 10px;
+        margin-top: 0px;
+        height: 25px;
+        fill: #cdc3cf;
+        
+        @media (max-width: 1200px) {
+            height: 20px;
+        }
+        @media (max-width: 991px) {
+            height: 15px;
+        }
+        @media (max-width: 767px) {
+            padding: 0px 20px;
+            margin-top: 16px;
+            height: 32px;
+            fill: #000;
+        }
     }
 }
 

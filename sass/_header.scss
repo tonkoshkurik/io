@@ -53,8 +53,21 @@
     background: #312d32;
     align-items: center;
     min-height: 145px;
+    .lang-switcher a{
+
+        font-size: 14px;
+        color: rgb(85, 77, 87);
+        font-weight: 400;
+        &.active{
+            color: rgb(216, 209, 217);
+        }
+        &:hover{
+            text-decoration: none;
+            color: rgb(216, 209, 217);
+        }
+    }
 }
-.lang span {
+.lang a {
     padding-right: 25px;
 }
 #main-menu {
