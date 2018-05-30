@@ -173,6 +173,9 @@
   @media (max-width: 1660px) {
     margin-right: 12%;
   }
+  @media (max-width: 991px) {
+    margin-right: 1%;
+  }
 }
 .swiper-button-prev.swiper-button-disabled,
 .swiper-button-next.swiper-button-disabled {
@@ -342,10 +345,7 @@ button.swiper-pagination-bullet {
   transition: 200ms transform, 200ms top, 200ms -webkit-transform;
 }
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
-  margin: 15px 50px;
-  @media (max-width: 767px) {
-    margin: 15px 30px;
-  }
+  margin: 15px 30px;
 }
 .swiper-container-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
   left: 50%;
