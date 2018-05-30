@@ -635,7 +635,7 @@
     }
 }
 
-.sistem-info-box {
+.sistem-info-box.command-box {
     background-color: #f5f5f5;
     color: #312d32;
     padding-top: 45px;
@@ -659,12 +659,17 @@
     .info-content {
         margin-top: 10%; //margin-left: 15px;
         p {
-            @media (min-width: 1500px) {
-                width: 70%;
-            }
             padding: 30px;
+            @media (min-width: 1500px) {
+                width: 75%;
+            }
             @media (max-width: 1500px) {
                 padding: 10px;
+            }
+        }
+        span,p{
+            @media (max-width: 1500px) {
+                font-size: 16px;
             }
         }
     }
@@ -679,7 +684,7 @@
 }
 
 .command-info-box-img {
-    background: url(../img/IMG_command.png) 10% 50% no-repeat;
+    background: url(../img/IMG_command.png) 17% 50% no-repeat;
     background-size: cover; // height: 835px;
     @media (max-width: 1380px) {
         // height: 565px;
@@ -689,6 +694,9 @@
         padding: 0;
         height: auto;
         .command-img-caption {
+            @media (min-width: 400px) {
+                display: none;
+            }
             /* Добавляем фон */
             background-size: cover;
             height: 480px;
@@ -702,6 +710,15 @@
             background: url(../img/9.png) 100% 20% no-repeat;
             background-size: cover;
             padding-bottom: 30px;
+            @media (min-width: 400px) {
+                h2.hidden-xs{
+                    font-size: 35px;
+                    display: block!important;
+                }
+                p{
+                    padding-left: 0;
+                }
+            }
         }
     }
 }
@@ -950,7 +967,7 @@
 }
 
 .text-white {
-    color: #fff;
+    color:#fff !important;
     h2 {
         color: #fff;
     }
