@@ -410,7 +410,7 @@
 
 .works-info-box-img {
     background: url(../img/IMG3.png) 100% 20% no-repeat;
-    @media (max-width: 540px) {
+    @media (max-width: 400px) {
         .works-img-caption {
             background: url(../img/IMG4.png) 100% 20% no-repeat;
         }
@@ -431,21 +431,23 @@
     h2 {
         font-size: 3.3vw;
         padding-top: 65px;
+        color: #fff;
         @media (max-width: 1370px) {
             padding-top: 15px;
             padding-bottom: 15px;
         }
-        @media (min-width: 540px) {
-            color: #fff;
+        @media (min-width: 768px) {
             padding-left: 15px;
+            
         }
         @media (max-width: 990px) {
             font-size: 35px !important;
             padding-top: 15px;
         }
-        @media (max-width: 540px) {
+        @media (max-width: 400px) {
             font-size: 27px !important;
             padding-top: 65px;
+            color: #000;
         }
     }
     .line-inset {
@@ -458,7 +460,7 @@
         @media (max-width: 990px) {
             padding-left: 15px;
         }
-        @media (max-width: 540px) {
+        @media (max-width: 767px) {
             padding-left: 0;
         }
     }
@@ -570,7 +572,7 @@
             margin: 0;
         }
     }
-    @media (max-width: 540px) {
+    @media (max-width: 400px) {
         .works-img-caption {
             /* Добавляем фон */
             background-size: cover;
@@ -1120,15 +1122,15 @@
     z-index: 2;
     @media (max-width: 1500px) {
         // height: 855px;
-        left: -15px;
+        left: -45px;
     }
     @media (max-width: 1225px) {
-        left: -80px;
+        left: -125px;
     }
 }
 
 .background-brown {
-    @media (min-width: 540px) {
+    @media (min-width: 400px) {
         background-color: #312d32;
     }
 }
