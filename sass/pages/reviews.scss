@@ -8,7 +8,7 @@
         justify-content: space-between;
         align-content: space-around;
         align-items: center;
-        height: 180px;
+        // height: 180px;
         .menu-flex {
             display: flex;
             flex-wrap: wrap;
@@ -69,9 +69,6 @@
             }
         }
     }
-}
-.comments-index.photo-page .comment {
-    padding: 0;
 }
 .comments-index {
     display: flex;
