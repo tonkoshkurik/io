@@ -311,7 +311,7 @@
             fill: #97319e;
         }
     }
-    @media (min-width: 767px) {
+    @media (min-width: 768px) {
         .icon-project {
             filter: grayscale(100%);
         }
@@ -861,7 +861,7 @@
         .info-text {
             flex-basis: 25%;
         }
-        @media (max-width: 991px) and (min-width: 767px) {
+        @media (max-width: 991px) and (min-width: 768px) {
             padding: 5px 20px;
             .info-title {
                 display: grid;
@@ -878,7 +878,7 @@
             white-space: nowrap;
         }
         .info-title {
-            @media (min-width: 767px) {
+            @media (min-width: 768px) {
                 display: flex;
                 align-items:center;
             }
@@ -957,6 +957,10 @@
     background-color: #edf0df;
     @media (max-width: 1380px) {
         margin-top: 45%;
+    }
+    @media (max-width: 768px) and (min-width: 768px) {
+        margin-top: 75%;
+        margin-bottom: 15%;
     }
     @media (max-width: 767px) {
         margin-left: 0;
@@ -1121,13 +1125,19 @@
     top: 50%;
     width: 27px;
     height: 44px;
-    margin-top: -15%;
+    margin-top: -16%;
     font-size: 18px;
     border-radius: 50%;
     padding: 35px 35px;
     z-index: 10;
     @media (min-width: 1500px) {
         margin-right: 12.5%;
+    }
+    @media (max-width: 991px) {
+        right: 0;
+        margin-top: -22%;
+        background-size: 25px;
+        padding: 30px 30px;
     }
 }
 .comment-button-next:hover{
