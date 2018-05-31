@@ -21,6 +21,9 @@
     width: 100%;
     height: 100%;
     top: -145px;
+    @media (max-width: 767px) {
+        top: -100px;
+    }
    
     .slide-img1,
     .slide-img2 {
@@ -60,7 +63,7 @@
         }
     }
 }
-.quote-row{
+.quote-row.home-page{
     &.visible-xs {
         @media (min-width: 573px) {
             display: none!important
