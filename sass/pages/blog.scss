@@ -2,14 +2,31 @@
 
 .blog-header {
   background: $bg-grey;
-  margin-top: -30px;
   .blog-header-wrapper {
     display: flex;
     // flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-around;
     align-items: center;
-    min-height: 180px;
+    min-height: 130px;
+    @media (min-width: 721px) {
+      &.visible-xs{
+        display: none!important;
+      }
+      .hidden-xs{
+        display: block!important;
+      }
+    }
+    @media (max-width: 720px) {
+      flex-direction: column;
+      align-items: stretch;
+      justify-content:center;
+      background: #dff0ef;
+      min-height: 85px;
+      &.cats{
+        background: $bg-grey;
+      }
+    }
     .box {
       flex: 1 1 auto;
       height: 100%;
@@ -24,7 +41,7 @@
     .box-header {
       // flex-basis: 20%;
       flex: 3;
-      height: 125px;
+      // height: 125px;
     }
     .menu-flex {
       display: flex;
@@ -52,6 +69,9 @@
     a{
       text-decoration: none;
       color: #7f7c7c;
+      &.btn{
+        color: #fff;
+      }
       &:hover{
         cursor: pointer;
         h3{
@@ -100,9 +120,6 @@
   }
   a.back:hover {
     // text-decoration: underline;
-  }
-  h1 {
-    margin-bottom: 50px;
   }
 }
 .post img.post-thumb {
@@ -388,7 +405,6 @@
 .two-header {
   @media all and( max-width: 767px) {
     .box-header-min.blog {
-      padding-left: 25px;
       h1 {
         padding-left: 0;
         font-size: 28px;
