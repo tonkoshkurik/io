@@ -57,6 +57,12 @@
         }
     }
 }
+.heder-content.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
 .menu {
     // min-width: 20%;
     flex: 1 0 auto;
