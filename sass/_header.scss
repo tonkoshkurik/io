@@ -29,18 +29,16 @@
                     background-position: bottom;
                 }
                 &:hover{
-                    width: 65px;
-                    height: 44px;
-                    margin: 10px;
+                    // width: 65px;
+                    // height: 44px;
+                    // margin: 10px;
+                    transform: scale(1.2);
                 }
             }
         }
         .box {
-            /* padding-top: 45px; */
-            /* height: 100%; */
-            // width: 8.3333%;
             margin-top: 30px;
-            // margin-left: 10px;
+            line-height: 1;
             flex: 1 0 auto;
             height: 100%;
         }
@@ -55,7 +53,10 @@
             flex-wrap: wrap;
             li {
                 flex-basis: 33%;
-                // flex: 1 1 auto;
+                margin-bottom: 20px;
+                &:hover{
+                    font-weight: 600;
+                }
             }
         }
         .menu-overlay.open .box{

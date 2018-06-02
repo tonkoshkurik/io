@@ -197,11 +197,12 @@
     .info-box {
         flex: 1 1 auto;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: nowrap;
         justify-content: center;
         .info-box-content {
             color: #000;
+            width: 100%;
             align-self: stretch;
             display: flex;
             flex-direction: row;
@@ -211,11 +212,14 @@
             align-content: stretch;
             .info-box-text,
             .info-box-title {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
                 flex-basis: 25%;
                 h3 {
                     font-size: 1.9vw;
                     margin: 0;
-                    height: 90%;
+                    // height: 90%;
                 }
                 p {
                     font-size: 0.9375vw;
@@ -229,7 +233,7 @@
                         font-size:16px;
                     }
                     margin: 0;
-                    height: 90%;
+                    // height: 90%;
                 }
                 .btn {
                     padding-left: 0px;
@@ -251,6 +255,10 @@
                 }
             }
             .info-box-img {
+
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
                 max-width: 100%;
             }
             @media (max-width: 767px) {
@@ -290,9 +298,14 @@
         height: 970px;
         background-size: cover;
     }
+    .icon-btn-box{
+        width: 0; 
+        margin: auto;
+        margin-left: -33px;
+    }
     .icon-btn {
-        position: absolute;
-        left: -3%;
+        // position: absolute;
+        margin-left: -50%;
         display: none;
     }
     .box1:hover a {
